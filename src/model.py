@@ -62,13 +62,13 @@ def main():
     start=time.time()
     q1=solve_1d(Config(kind='q1',n=N,dt=5),1800,np.arange(0,1801,1.))
     q2=solve_1d(Config(kind='q2',n=N,dt=5),10800,np.arange(0,10801,1.))
-    q3=solve_1d(Config(kind='q2',n=N,dt=120),2000000,np.arange(0,2000000+60,60.),event_threshold=.15,y0=np.r_[q2['T'][-1],q2['C'][-1]])
+    q3=solve_1d(Config(kind='q2',n=N,dt=120),2000000,np.arange(0,2000000+60,60.),event_threshold=.15)
     q4=solve_1d(Config(kind='q4',n=N,dt=120,moving=True),2000000,np.arange(0,2000000+60,60.),event_threshold=.15)
     export_question('q1',q1,'result1.xlsx'); export_question('q2',q2,'result2.xlsx'); export_question('q2',q3,'result3.xlsx'); export_question('q4',q4,'result4.xlsx',True)
     for name,d in [('q1',q1),('q2',q2),('q3',q3),('q4',q4)]:
         np.savez_compressed(OUT/f'{name}.npz',t=d['t'],T=d['T'],C=d['C'],iterations=d['iterations'],Jw=d['Jw'],qconv=d['qconv'],event_time=np.nan if d['event'] is None else d['event'])
         write_summary(d,'q1' if name=='q1' else 'q2' if name=='q2' else name,name=='q4')
-    l3=solve_1d(Config(kind='q2',n=80,dt=120,latent=True),500000,np.arange(0,500001,60.),event_threshold=.15,y0=np.r_[q2['T'][-1,::2],q2['C'][-1,::2]])
+    l3=solve_1d(Config(kind='q2',n=80,dt=120,latent=True),500000,np.arange(0,500001,60.),event_threshold=.15)
     l4=solve_1d(Config(kind='q4',n=80,dt=120,moving=True,latent=True),500000,np.arange(0,500001,60.),event_threshold=.15)
     ledger={'baseline_q3_event_s':q3['event'],'baseline_q4_event_s':q4['event'],'latent_q3_event_s':l3['event'],'latent_q4_event_s':l4['event'],'q3_latent_energy':energy(l3,Config(kind='q2',n=80,dt=120,latent=True)),'q4_latent_energy':energy(l4,Config(kind='q4',n=80,dt=120,moving=True,latent=True))}
     (OUT/'energy_ledger.json').write_text(json.dumps(ledger,ensure_ascii=False,indent=2)); (OUT/'shrinkage_scenarios.json').write_text(json.dumps({str(g):{'H_over_H0_at_last':float((Rmeas(2000000)/R0)**g)} for g in (0,.5,1)},indent=2))
