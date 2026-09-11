@@ -58,7 +58,7 @@ def write_summary(data,kind,moving=False):
         np.savetxt(OUT/'表1_温度.csv',np.c_[times,a],delimiter=',',header='time,'+','.join(map(str,r*100)),comments=''); np.savetxt(OUT/'表2_水分浓度.csv',np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
     elif kind=='q2':
         np.savetxt(OUT/'表3_温度.csv',np.c_[times,a],delimiter=',',header='time,'+','.join(map(str,r*100)),comments=''); np.savetxt(OUT/'表4_水分浓度.csv',np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
-    else: np.savetxt(OUT/'表5_水分浓度.csv',np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
+    else: np.savetxt(OUT/('表5_水分浓度.csv' if kind=='q3' else '表6_水分浓度.csv'),np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
 
 def energy(data,cfg):
     st,sc,J=surface_values(cfg,data); t=data['t']; R=np.array([Rmeas(x) if cfg.moving else R0 for x in t]); A=2*np.pi*R*.25
