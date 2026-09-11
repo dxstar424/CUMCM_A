@@ -50,7 +50,7 @@ def export_question(kind,data,name,moving=False):
 
 def write_summary(data,kind,moving=False):
     r=np.arange(0,2.0001,.5)*1e-2; vt=interp_moving(data['T'],data['t'],r) if moving else interp_fixed(data['T'],r); vc=interp_moving(data['C'],data['t'],r) if moving else interp_fixed(data['C'],r)
-    times=np.array([100,300,600,900,1200,1500,1800.]) if kind=='q1' else np.arange(.5,3.01,.5)*3600 if kind=='q2' else np.arange(6,55,6)*3600
+    times=np.array([100,300,600,900,1200,1500,1800.]) if kind=='q1' else np.arange(.5,3.01,.5)*3600 if kind=='q2' else np.arange(6,55,6)*3600; times=times[times<=data['t'][-1]+1e-9]
     a=[]; b=[]
     for t in times:
         j=int(np.argmin(abs(data['t']-t))); a.append(vt[j]); b.append(vc[j])
