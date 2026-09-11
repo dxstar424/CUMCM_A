@@ -8,5 +8,9 @@
   "N": 160,
   "dt_q1_q2_s": 1,
   "dt_q3_q4_s": 60,
-  "environment_continuation": "last measured value"
+  "environment_continuation": "last measured value",
+  "q3_first_strict_sample_s": 206460.0,
+  "q3_max_at_first_sample": 0.14998748769840084,
+  "q4_first_strict_sample_s": 183300.0,
+  "q4_max_at_first_sample": 0.14998941312068664
 }

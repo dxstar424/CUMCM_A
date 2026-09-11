@@ -5,10 +5,17 @@ from pathlib import Path
 import numpy as np
 from openpyxl import load_workbook
 try:
-    from src.solver import (ROOT, DATA, OUT, Config, air, radius, Tinf, Cbinf, Rmeas, solve_1d, solve_2d, interp_radial, reconstruct_center, surface_values, sha256)
+    from src.solver import (ROOT, DATA, OUT, Config, air, radius, Tinf, Cbinf, Rmeas, solve_1d, solve_2d, interp_radial, reconstruct_center, surface_values as surface_values_solver, sha256)
 except ModuleNotFoundError:
-    from solver import (ROOT, DATA, OUT, Config, air, radius, Tinf, Cbinf, Rmeas, solve_1d, solve_2d, interp_radial, reconstruct_center, surface_values, sha256)
+    from solver import (ROOT, DATA, OUT, Config, air, radius, Tinf, Cbinf, Rmeas, solve_1d, solve_2d, interp_radial, reconstruct_center, surface_values as surface_values_solver, sha256)
 R0=0.02; C0,T0=2.55,28.; N=160
+
+def surface_values(kind, y, times, moving=False, n=N):
+    """Backward-compatible surface reconstruction for paper/plot scripts."""
+    arr=np.asarray(y); times=np.asarray(times,dtype=float)
+    cfg=Config(kind=kind,n=n,moving=moving)
+    data={"T":arr[:,:n],"C":arr[:,n:],"t":times}
+    return surface_values_solver(cfg,data)
 
 def interp_fixed(y,radii,R=R0): return interp_radial(np.asarray(y),radii,R)
 def interp_moving(y,times,radii):
@@ -74,7 +81,7 @@ def main():
     (OUT/'energy_ledger.json').write_text(json.dumps(ledger,ensure_ascii=False,indent=2)); (OUT/'shrinkage_scenarios.json').write_text(json.dumps({str(g):{'H_over_H0_at_last':float((Rmeas(2000000)/R0)**g)} for g in (0,.5,1)},indent=2))
     d2a=solve_2d('q4',3600,nr=8,nz=12,dt=30); d2b=solve_2d('q4',3600,nr=12,nz=18,dt=30)
     (OUT/'two_d_validation.json').write_text(json.dumps({'coarse_grid':[8,12],'fine_grid':[12,18],'grid_change_max_C':float(abs(d2b['T'].max()-d2a['T'].max())),'grid_change_max_C_moisture':float(abs(d2b['C'].max()-d2a['C'].max())),'note':'2D endpoint-transfer scenario; Q4 production remains 1D.'},indent=2))
-    event={'q3_continuous_s':q3['event'],'q3_continuous_h':None if q3['event'] is None else q3['event']/3600,'q4_continuous_s':q4['event'],'q4_continuous_h':None if q4['event'] is None else q4['event']/3600,'threshold':.15,'event_definition':'max(cell moisture, center reconstruction, Robin surface)-threshold','N':N,'dt_q1_q2_s':1,'dt_q3_q4_s':60,'environment_continuation':'last measured value'}
+    event={'q3_continuous_s':q3['event'],'q3_continuous_h':None if q3['event'] is None else q3['event']/3600,'q4_continuous_s':q4['event'],'q4_continuous_h':None if q4['event'] is None else q4['event']/3600,'q3_first_strict_sample_s':None if q3['event'] is None else float(np.ceil(q3['event']/60)*60),'q4_first_strict_sample_s':None if q4['event'] is None else float(np.ceil(q4['event']/60)*60),'q3_max_at_first_sample':None if q3['event'] is None else float(max(np.max(q3['C'][int(np.argmin(abs(q3['t']-np.ceil(q3['event']/60)*60)))]),reconstruct_center(q3['C'][int(np.argmin(abs(q3['t']-np.ceil(q3['event']/60)*60)))]))),'q4_max_at_first_sample':None if q4['event'] is None else float(max(np.max(q4['C'][int(np.argmin(abs(q4['t']-np.ceil(q4['event']/60)*60)))]),reconstruct_center(q4['C'][int(np.argmin(abs(q4['t']-np.ceil(q4['event']/60)*60)))]))),'threshold':.15,'event_definition':'max(cell moisture, center reconstruction, Robin surface)-threshold','N':N,'dt_q1_q2_s':1,'dt_q3_q4_s':60,'environment_continuation':'last measured value'}
     (OUT/'event_summary.json').write_text(json.dumps(event,ensure_ascii=False,indent=2))
     inputs=[ROOT/'A题/A题.pdf',DATA/'附件1.xlsx',DATA/'附件2.xlsx']+list((DATA/'附件3').glob('*.xlsx'))
     manifest={'schema_version':2,'runtime':{'python':platform.python_version(),'numpy':np.__version__},'inputs':[{'path':str(p.relative_to(ROOT)),'sha256':sha256(p)} for p in inputs],'configuration':{'N':N,'baseline_latent':False,'latent_Lv_J_per_kg':[2.3e6,2.4e6,2.5e6],'q4_gamma_scenarios':[0,.5,1],'event_threshold':.15},'outputs':['result1.xlsx','result2.xlsx','result3.xlsx','result4.xlsx','event_summary.json','energy_ledger.json','two_d_validation.json'],'reproduce_command':f'{sys.executable} src/model.py && {sys.executable} src/postprocess.py','elapsed_s':time.time()-start}
