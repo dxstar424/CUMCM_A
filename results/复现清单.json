@@ -56,8 +56,10 @@
     "result4.xlsx",
     "event_summary.json",
     "energy_ledger.json",
-    "two_d_validation.json"
+    "two_d_validation.json",
+    "results/convergence_current.json",
+    "results/attribution.json"
   ],
-  "reproduce_command": "/Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python src/model.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python src/postprocess.py",
+  "reproduce_command": "/Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python src/model.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python src/postprocess.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python src/attribution.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/CUMCM2026Problems/.venv-math-modeling/bin/python convergence.py",
   "elapsed_s": 32.67762517929077
 }

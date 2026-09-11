@@ -275,16 +275,23 @@ def solve_2d(kind="q4", t_end=3600.0, nr=12, nz=24, dt=20.0, end_mode="adiabatic
                     gmb = 8e-7 / (1 + 8e-7 * dr / (2 * D[iz, ir]))
                     dT[iz, ir] += ar * gb * (Tinf(t) - T[iz, ir]) / (rho[iz, ir] * cp[iz, ir] * vol)
                     dC[iz, ir] += ar * gmb * (Cbinf(t) - C[iz, ir]) / vol
+                afz = np.pi * (((ir + 1) * dr) ** 2 - (ir * dr) ** 2)
                 if iz > 0:
-                    afz = np.pi * (((ir + 1) * dr) ** 2 - (ir * dr) ** 2)
                     kf = harmonic(k[iz - 1, ir], k[iz, ir]); Df = harmonic(D[iz - 1, ir], D[iz, ir])
                     dT[iz, ir] += afz * kf * (T[iz - 1, ir] - T[iz, ir]) / dz / (rho[iz, ir] * cp[iz, ir] * vol)
                     dC[iz, ir] += afz * Df * (C[iz - 1, ir] - C[iz, ir]) / dz / vol
+                elif end_mode == "convective":
+                    gbz = 25.0 / (1 + 25.0 * dz / (2 * k[iz, ir])); gmz = 8e-7 / (1 + 8e-7 * dz / (2 * D[iz, ir]))
+                    dT[iz, ir] += afz * gbz * (Tinf(t) - T[iz, ir]) / (rho[iz, ir] * cp[iz, ir] * vol)
+                    dC[iz, ir] += afz * gmz * (Cbinf(t) - C[iz, ir]) / vol
                 if iz < nz - 1:
-                    afz = np.pi * (((ir + 1) * dr) ** 2 - (ir * dr) ** 2)
                     kf = harmonic(k[iz + 1, ir], k[iz, ir]); Df = harmonic(D[iz + 1, ir], D[iz, ir])
                     dT[iz, ir] += afz * kf * (T[iz + 1, ir] - T[iz, ir]) / dz / (rho[iz, ir] * cp[iz, ir] * vol)
                     dC[iz, ir] += afz * Df * (C[iz + 1, ir] - C[iz, ir]) / dz / vol
+                elif end_mode == "convective":
+                    gbz = 25.0 / (1 + 25.0 * dz / (2 * k[iz, ir])); gmz = 8e-7 / (1 + 8e-7 * dz / (2 * D[iz, ir]))
+                    dT[iz, ir] += afz * gbz * (Tinf(t) - T[iz, ir]) / (rho[iz, ir] * cp[iz, ir] * vol)
+                    dC[iz, ir] += afz * gmz * (Cbinf(t) - C[iz, ir]) / vol
         return np.r_[dT.ravel(), dC.ravel()]
     sol = solve_ivp(rhs, (0, t_end), y0, method="BDF", rtol=2e-5, atol=1e-7,
                     t_eval=[t_end], max_step=dt)
