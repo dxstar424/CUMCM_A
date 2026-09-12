@@ -201,6 +201,7 @@ def main():
     max_dt = float(np.max(np.abs(latent['T'] - base_T_match)))
     max_dc = float(np.max(np.abs(latent['C'] - base_C_match)))
     i_end = -1
+    i_min_t, i_min_r = np.unravel_index(np.argmin(latent['T']), latent['T'].shape)
     metrics = {
         '实验类型': 'Q2表面蒸发潜热有界情景对照',
         '对照组': '最终Q2基线，不含潜热边界项',
@@ -213,6 +214,8 @@ def main():
         '终点中心含水率_无潜热': float(base['C'][i_end,0]), '终点中心含水率_有潜热': float(latent['C'][i_end,0]),
         '终点表面含水率_无潜热': float(base['C'][i_end,-1]), '终点表面含水率_有潜热': float(latent['C'][i_end,-1]),
         '全时空最大温度绝对差_C': max_dt, '全时空最大含水率绝对差': max_dc,
+        '全时空最低温度_C': float(latent['T'][i_min_t, i_min_r]), '最低温度对应时间_s': float(latent['t'][i_min_t]),
+        '最低温度对应半径_cm': float(R[i_min_r] * 100.0),
         '潜热累计能量_J': e_lat, '对流累计能量_J': e_conv, '净边界累计能量_J': e_net,
         '潜热占对流累计能量比例': float(e_lat / e_conv) if e_conv != 0 else float('nan'),
         '末时刻蒸发质量通量_kg_per_m2_s': float(latent['jw'][i_end]),
