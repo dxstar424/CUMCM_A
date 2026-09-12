@@ -1,132 +1,168 @@
-"""Q4残留ALE网格对流项对照实验。
+"""Q4材料坐标与错误保留网格导数项的受控对照。
 
-基线为最终决策中的材料坐标纯扩散模型；诊断组强行保留
-- (xi * Rdot / R) * dC/dxi 的残留网格输运项。该项理论上应为零，
-因此诊断组不代表新的物理机制。
+正确ALE相对速度为(v_s-xi*Rdot)/R=0；诊断在右端故意保留
+b*dU/dxi，b=-xi*Rdot/R。默认内点中心差分、表面Robin导数闭合。
 """
-from __future__ import annotations
 from pathlib import Path
-import json, math
+import argparse, hashlib, json, platform
 import numpy as np
 import pandas as pd
 from scipy.interpolate import PchipInterpolator
 
-HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
-raw = np.load(ROOT / 'results' / 'inputs.npz')
-AIR, RAD = raw['air'], raw['rad']
-AIR_T, AIR_TA, AIR_CA = AIR[:,0], AIR[:,1], AIR[:,2]
-R0, LENGTH, T0, C0 = 0.02, 0.25, 28.0, 2.55
-N = 201; DT = 60.0; TOL = 1e-10
-PLATEAU_START, PLATEAU_T, PLATEAU_CB = 7200.0, 50.0, 0.05
-rad_pchip = PchipInterpolator(RAD[:,0], RAD[:,1]/100.0, extrapolate=False)
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'results'/'q4_ale_compare'
+RAW=np.load(ROOT/'results'/'inputs.npz')
+AIR,RAD=RAW['air'],RAW['rad']
+RP=PchipInterpolator(RAD[:,0],RAD[:,1]/100,extrapolate=False)
+RPD=RP.derivative()
+T0,C0=28.0,2.55
 
 def radius(t):
-    if t <= RAD[0,0]: return float(RAD[0,1]/100.0)
-    if t >= RAD[-1,0]: return float(RAD[-1,1]/100.0)
-    return float(rad_pchip(t))
-
+    return float(RAD[0,1]/100 if t<=RAD[0,0] else RAD[-1,1]/100 if t>=RAD[-1,0] else RP(t))
 def radius_dot(t):
-    if t <= RAD[0,0] or t >= RAD[-1,0]: return 0.0
-    return float(rad_pchip.derivative()(t))
-
+    return float(RPD(t)) if RAD[0,0]<t<RAD[-1,0] else 0.0
 def environment(t):
-    if t > PLATEAU_START: return PLATEAU_T, PLATEAU_CB
-    return float(np.interp(t,AIR_T,AIR_TA)), float(np.interp(t,AIR_T,AIR_CA))
-
-def geometry(n=N):
-    dx=1.0/(n-1); x=np.arange(n)*dx; xf=(np.arange(n-1)+.5)*dx
-    V=np.empty(n); V[0]=dx*dx/8; V[1:-1]=.5*((x[1:-1]+dx/2)**2-(x[1:-1]-dx/2)**2); V[-1]=.5*(1-(1-dx/2)**2)
-    return x,xf,V,dx
-X,XF,VX,DX=geometry()
+    return (50.0,0.05) if t>7200 else (float(np.interp(t,AIR[:,0],AIR[:,1])),float(np.interp(t,AIR[:,0],AIR[:,2])))
+def geometry(n):
+    x=np.arange(n)/(n-1); dx=1/(n-1); xf=(np.arange(n-1)+.5)*dx
+    v=np.empty(n); v[0]=dx*dx/8; v[1:-1]=.5*((x[1:-1]+dx/2)**2-(x[1:-1]-dx/2)**2); v[-1]=.5*(1-(1-dx/2)**2)
+    return x,xf,v,dx
 
 def coeffs(T,C):
-    C=np.asarray(C); T=np.asarray(T)
-    return (760+90*C,1850+2150*C/(C+1),0.12+0.20*C/(C+1),4.2e-4*np.exp(-0.30/np.maximum(C,1e-12)-3850/(T+273.15)))
+    return (760+90*C,1850+2150*C/(C+1),.12+.20*C/(C+1),4.2e-4*np.exp(-.30/np.maximum(C,1e-12)-3850/(T+273.15)))
+def thomas(lo,di,up,rhs):
+    a=lo.copy(); b=di.copy(); c=up.copy(); d=rhs.copy()
+    for j in range(1,len(b)):
+        z=a[j]/b[j-1]; b[j]-=z*c[j-1]; d[j]-=z*d[j-1]
+    u=np.empty(len(b)); u[-1]=d[-1]/b[-1]
+    for j in range(len(b)-2,-1,-1):u[j]=(d[j]-c[j]*u[j+1])/b[j]
+    return u
 
-def thomas(lower,diag,upper,rhs):
-    a=np.asarray(lower,float).copy(); b=np.asarray(diag,float).copy(); c=np.asarray(upper,float).copy(); d=np.asarray(rhs,float).copy(); n=len(b)
-    for i in range(1,n):
-        z=a[i]/b[i-1]; b[i]-=z*c[i-1]; d[i]-=z*d[i-1]
-    out=np.empty(n); out[-1]=d[-1]/b[-1]
-    for i in range(n-2,-1,-1): out[i]=(d[i]-c[i]*out[i+1])/b[i]
-    return out
-
-def assemble(old,Tp,Cp,dt,t,var,ale=False):
-    Rnow=radius(t); rho,cp,k,D=coeffs(Tp,Cp); kap=k if var=='T' else D
-    beta=25.0 if var=='T' else 8e-7; bnd=environment(t)[0 if var=='T' else 1]
-    storage=VX*Rnow**2*(rho*cp if var=='T' else 1.0)/dt
-    lo=np.zeros(N); up=np.zeros(N); di=storage.copy(); rhs=storage*old
-    face=.5*(kap[:-1]+kap[1:]); cond=face*XF/DX
-    up[0]=-cond[0]; di[0]+=cond[0]
-    for j in range(1,N-1): lo[j]=-cond[j-1]; up[j]=-cond[j]; di[j]+=cond[j-1]+cond[j]
-    lo[-1]=-cond[-1]; di[-1]+=cond[-1]+Rnow*beta; rhs[-1]+=Rnow*beta*bnd
-    if ale:
-        # 历史错误ALE口径：把网格速度项作为残留向外输运保留。
-        # a_res=-xi*Rdot/R，收缩时Rdot<0，故a_res>0。
-        a_node=-X*radius_dot(t)/Rnow
-        # 历史错误ALE实现按非守恒点值梯度加入残项：a_res*dC/dxi。
-        # 正向一阶迎风，保留与历史口径一致的残余输运强度。
-        adv=Rnow**2*VX*a_node/DX
-        for j in range(1,N):
-            # 右端加入 +a_res*dC/dxi；C沿半径递减时，该项降低C并加速失水。
-            di[j]-=adv[j]
-            lo[j]+=adv[j]
+def assemble(old,T,C,dt,t,var,active,geo,scheme='centered',closed=False):
+    x,xf,v,dx=geo; n=len(x); R=radius(t)
+    rho,cp,k,D=coeffs(T,C); cap=rho*cp if var=='T' else np.ones(n)
+    kap=k if var=='T' else D; beta=(25.0 if var=='T' else 8e-7) if not closed else 0.0
+    bnd=environment(t)[0 if var=='T' else 1]
+    storage=v*R**2*cap/dt
+    lo=np.zeros(n); up=np.zeros(n); di=storage.copy(); rhs=storage*old
+    g=.5*(kap[:-1]+kap[1:])*xf/dx
+    up[0]=-g[0];di[0]+=g[0]
+    for j in range(1,n-1):
+        lo[j]=-g[j-1];up[j]=-g[j];di[j]+=g[j-1]+g[j]
+    lo[-1]=-g[-1];di[-1]+=g[-1]+R*beta;rhs[-1]+=R*beta*bnd
+    source_weight=np.zeros(n)
+    if active:
+        b=-x*radius_dot(t)/R
+        source_weight=v*R**2*cap*b
+        if scheme=='centered':
+            lo[1:-1]+=source_weight[1:-1]/(2*dx)
+            up[1:-1]-=source_weight[1:-1]/(2*dx)
+        elif scheme=='upwind':
+            # RHS b*U_xi 等价左端速度 -b；收缩时用前向迎风。
+            di[1:-1]+=source_weight[1:-1]/dx
+            up[1:-1]-=source_weight[1:-1]/dx
+        else:raise ValueError(scheme)
+        # 表面 U_xi=-R*beta/kap*(Us-Ua)，与原Robin边界一致。
+        sink=source_weight[-1]*R*beta/kap[-1]
+        di[-1]+=sink;rhs[-1]+=sink*bnd
     return lo,di,up,rhs
 
-def step(T,C,t,ale):
-    Tn,Cn=T.copy(),C.copy()
-    for it in range(1,501):
-        lo,di,up,rhs=assemble(T,Tn,Cn,DT,t,'T',ale); Tnext=thomas(lo,di,up,rhs)
-        lo,di,up,rhs=assemble(C,Tnext,Cn,DT,t,'C',ale); Cnext=thomas(lo,di,up,rhs)
-        err=max(float(np.max(abs(Tnext-Tn))),float(np.max(abs(Cnext-Cn))))
-        Tn,Cn=Tnext,Cnext
-        if err<TOL:return Tn,Cn,it
-    raise RuntimeError(f'未收敛 t={t}, err={err}')
+def gradient(u,t,var,geo,scheme,closed=False):
+    x,xf,v,dx=geo; du=np.zeros_like(u)
+    if scheme=='centered':du[1:-1]=(u[2:]-u[:-2])/(2*dx)
+    else:du[1:-1]=(u[2:]-u[1:-1])/dx
+    # 此函数只用于水分收支；D需要调用方提供表面闭合。
+    return du
 
-def run(ale):
-    T=np.full(N,T0); C=np.full(N,C0); ts=[0.0]; Ts=[T.copy()]; Cs=[C.copy()]; its=[0]; event=None
-    for t in np.arange(DT,300000+1e-9,DT):
-        T,C,it=step(T,C,float(t),ale); ts.append(float(t));Ts.append(T.copy());Cs.append(C.copy());its.append(it)
-        if event is None and C[0]<0.15:
-            prev=Cs[-2][0]; now=C[0]; event=float(t-DT*(prev-0.15)/(prev-now))
-            break
-    return {'t':np.array(ts),'T':np.array(Ts),'C':np.array(Cs),'iterations':np.array(its),'event':event,'ale':ale}
+def run(active,dt=60.0,n=201,end=184020.0,scheme='centered',closed=False):
+    geo=geometry(n); x,xf,v,dx=geo
+    T=np.full(n,T0);C=np.full(n,C0); ts=[0.0];Ts=[T.copy()];Cs=[C.copy()];its=[0]
+    event=np.nan; losses=[0.0]; sources=[0.0]; balances=[0.0]
+    for t in np.arange(dt,end+dt*.01,dt):
+        Told,Cold=T.copy(),C.copy();Tn,Cn=T.copy(),C.copy()
+        for it in range(1,501):
+            Tnext=thomas(*assemble(Told,Tn,Cn,dt,float(t),'T',active,geo,scheme,closed))
+            Cnext=thomas(*assemble(Cold,Tnext,Cn,dt,float(t),'C',active,geo,scheme,closed))
+            err=max(np.max(abs(Tnext-Tn)),np.max(abs(Cnext-Cn))); Tn,Cn=Tnext,Cnext
+            if err<1e-10:break
+        else:raise RuntimeError(f'Picard未收敛: {t}')
+        T,C=Tn,Cn
+        prev=float(np.max(Cold));now=float(np.max(C))
+        if np.isnan(event) and prev>=.15 and now<.15:event=float(t-dt+dt*(prev-.15)/(prev-now))
+        R=radius(float(t));Ca=environment(float(t))[1]
+        physical=0.0 if closed else -2*8e-7*(C[-1]-Ca)/R
+        _,_,_,D=coeffs(T,C); du=gradient(C,t,'C',geo,scheme,closed)
+        du[-1]=0.0 if closed else -R*8e-7*(C[-1]-Ca)/D[-1]
+        source=float(2*np.sum(v*(-x*radius_dot(float(t))/R)*du)) if active else 0.0
+        balance=float(2*np.sum(v*(C-Cold))/dt-physical-source)
+        ts.append(float(t));Ts.append(T.copy());Cs.append(C.copy());its.append(it)
+        losses.append(physical);sources.append(source);balances.append(balance)
+    return dict(t=np.array(ts),T=np.array(Ts),C=np.array(Cs),iterations=np.array(its),event=event,
+                mean_C=2*np.array(Cs)@v,physical_rate=np.array(losses),residual_rate=np.array(sources),
+                balance_error=np.array(balances),n=n,dt=dt,scheme=scheme,active=active)
 
-def inv(data):
-    return np.asarray([float(np.sum(VX*radius(float(t))**2*c)) for t,c in zip(data['t'],data['C'])])
-def interp_field(data,t,field):
-    i=int(np.argmin(abs(data['t']-t))); return data[field][i]
-def r4(v):
-    if isinstance(v,dict): return {k:r4(x) for k,x in v.items()}
-    if isinstance(v,(float,np.floating)):
-        x=float(v)
-        return 0.0 if abs(x)<0.00005 else float(f'{x:.4f}')
-    return v
+def field_at(data,t,key='C'):
+    ts=data['t']
+    if t<ts[0]-1e-9 or t>ts[-1]+1e-9:raise ValueError('禁止区间外夹持')
+    j=np.searchsorted(ts,t)
+    if j==0:return data[key][0]
+    if j==len(ts):return data[key][-1]
+    q=(t-ts[j-1])/(ts[j]-ts[j-1]);return data[key][j-1]*(1-q)+data[key][j]*q
+
+def write_json(path,obj):
+    # 面向阅读的JSON以四位小数字符串保留尾零；原始数值保存于npz。
+    def fmt(x):
+        if isinstance(x,dict):return {k:fmt(v) for k,v in x.items()}
+        if isinstance(x,list):return [fmt(v) for v in x]
+        if isinstance(x,(float,np.floating)):return f'{0.0 if abs(x)<.00005 else x:.4f}'
+        if isinstance(x,(np.integer,)):return int(x)
+        return x
+    path.write_text(json.dumps(fmt(obj),ensure_ascii=False,indent=2),encoding='utf-8')
 
 def main():
-    out=ROOT/'results'/'q4_ale_compare'; out.mkdir(parents=True,exist_ok=True)
-    base={k:v for k,v in np.load(ROOT/'results'/'q4.npz').items()}; ale=run(True)
-    np.savez_compressed(out/'q4_残留ALE对流.npz',**ale)
-    ev0=float(base['event']); ev1=float(ale['event']);
-    times=[43200,86400,129600,172800,ev0,ev1]
-    rows=[]
+    p=argparse.ArgumentParser();p.add_argument('--validate',action='store_true');args=p.parse_args()
+    OUT.mkdir(exist_ok=True,parents=True)
+    production=dict(np.load(ROOT/'results'/'q4.npz'));end=float(production['t'][-1])
+    base=run(False,end=end);ale=run(True,end=end)
+    regression=max(float(np.max(abs(base[k]-production[k]))) for k in ['T','C'])
+    assert regression<1e-8
+    assert abs(float(base['event'])-float(production['event']))<1e-5
+    for name,d in [('q4_材料坐标基线',base),('q4_残留ALE对流',ale)]:np.savez_compressed(OUT/f'{name}.npz',**d)
+    ev0,ev1=base['event'],ale['event'];delta=ale['C']-base['C']; mi,mj=np.unravel_index(np.argmax(abs(delta)),delta.shape)
+    times=sorted(set([18000.,43200.,86400.,129600.,172800.,ev0,ev1]));rows=[]
     for t in times:
-        c0=interp_field(base,t,'C'); c1=interp_field(ale,t,'C')
-        rows.append({'时间_s':t,'中心含水率_基线':float(c0[0]),'中心含水率_残留ALE':float(c1[0]),'中心差值':float(c1[0]-c0[0]),'表面含水率_基线':float(c0[-1]),'表面含水率_残留ALE':float(c1[-1]),'表面差值':float(c1[-1]-c0[-1])})
-    rows=[{k:(0.0 if isinstance(v,(float,np.floating)) and abs(float(v))<0.00005 else v) for k,v in row.items()} for row in rows]
-    pd.DataFrame(rows).to_csv(out/'Q4_ALE对照_关键时刻.csv',index=False,encoding='utf-8-sig',float_format='%.4f')
-    inv0=inv(base); inv1=inv(ale); idx=min(len(inv0),len(inv1));
-    baseC=base['C'][:idx]; aleC=ale['C'][:idx]
-    metrics={'实验类型':'Q4残留ALE网格对流项对照','基线':'材料坐标纯扩散，不含残留对流项','实验组':'强行保留 -xi*Rdot/R 的网格输运项','时间步_s':DT,'节点数':N,'基线终止时间_s':ev0,'残留ALE终止时间_s':ev1,'基线终止时间_h':ev0/3600,'残留ALE终止时间_h':ev1/3600,'终止时间差_s':ev1-ev0,'终止时间差_h':(ev1-ev0)/3600,'终止时间相对偏差':(ev1-ev0)/ev0,'最大含水率绝对差':float(np.max(np.abs(aleC-baseC))),'终点中心差值':float(ale['C'][-1,0]-base['C'][-1,0]),'基线终止时中心含水率':float(base['C'][-1,0]),'残留ALE终止时中心含水率':float(ale['C'][-1,0]),'基线终止时表面含水率':float(base['C'][-1,-1]),'残留ALE终止时表面含水率':float(ale['C'][-1,-1]),'基线无量纲水分库存终值':float(inv0[-1]),'残留ALE无量纲水分库存终值':float(inv1[-1]),'相同时间窗库存差值':float(inv1[idx-1]-inv0[idx-1]),'说明':'残留ALE项是坐标处理错误造成的数值输运，不代表真实物理对流；不纳入Q4主模型。'}
-    with open(out/'Q4_ALE对照_指标.json','w',encoding='utf-8') as f: json.dump(r4(metrics),f,ensure_ascii=False,indent=2)
-    # 全时序中心与表面含水率
-    tmax=min(base['t'][-1],ale['t'][-1]); times2=np.arange(0,tmax+1e-9,DT); rr=[]
-    for t in times2:
-        c0=interp_field(base,t,'C'); c1=interp_field(ale,t,'C'); rr.append({'时间_s':t,'中心基线':c0[0],'中心残留ALE':c1[0],'表面基线':c0[-1],'表面残留ALE':c1[-1],'中心差值':c1[0]-c0[0],'表面差值':c1[-1]-c0[-1]})
-    pd.DataFrame(rr).to_csv(out/'Q4_ALE对照_逐时含水率.csv',index=False,encoding='utf-8-sig',float_format='%.4f')
-    # 生成可直接核对的中文说明，数值统一保留四位小数。
-    with open(out/'Q4_ALE对照_说明.md','w',encoding='utf-8') as f:
-        f.write(f'''# Q4残留ALE网格对流项对照说明\n\n基线采用材料坐标 xi=r/R(t) 下的纯扩散方程；实验组在完全相同的网格、时间步、半径函数、物性、边界条件和终止判据下，强行保留历史ALE实现中的残留网格输运项 -xi·Rdot/R·dC/dxi。均匀径向收缩时材料速度与网格速度相同，该项理论上应为零，因此实验组仅用于数值诊断。\n\n当前版本重算得到基线终止时间为 {ev0/3600:.4f} h，残留ALE组为 {ev1/3600:.4f} h，差值为 {(ev1-ev0)/3600:.4f} h，相对基线偏差为 {(ev1-ev0)/ev0*100:.4f}%。残留项使水分被额外向表面输运，导致终止时间提前。该提前不是收缩引起的真实物理效应，而是把网格速度错误地当成相对材料输运造成的数值偏差，因此不纳入Q4主模型。\n\n在 43200.0000 s、86400.0000 s、129600.0000 s 和 172800.0000 s 时，残留ALE组的中心含水率相对基线分别低 0.1391、0.0247、0.0087 和 0.0044。误差在早期收缩较快、浓度梯度较大时最明显，接近终止时因浓度梯度变缓而减小。\n''')
-    print(json.dumps(r4(metrics),ensure_ascii=False,indent=2))
-if __name__=='__main__': main()
+        cb,ca=field_at(base,t),field_at(ale,t)
+        rows.append(dict(时间_s=t,时间_h=t/3600,中心含水率_基线=cb[0],中心含水率_残留ALE=ca[0],中心差值=ca[0]-cb[0],表面含水率_基线=cb[-1],表面含水率_残留ALE=ca[-1],表面差值=ca[-1]-cb[-1]))
+    df=pd.DataFrame(rows);df.to_csv(OUT/'Q4_ALE对照_关键时刻.csv',index=False,encoding='utf-8-sig',float_format='%.4f')
+    pd.DataFrame(dict(时间_s=base['t'],中心基线=base['C'][:,0],中心残留ALE=ale['C'][:,0],表面基线=base['C'][:,-1],表面残留ALE=ale['C'][:,-1],中心差值=delta[:,0],表面差值=delta[:,-1],材料平均含水率_基线=base['mean_C'],材料平均含水率_残留ALE=ale['mean_C'])).to_csv(OUT/'Q4_ALE对照_逐时含水率.csv',index=False,encoding='utf-8-sig',float_format='%.4f')
+    metrics=dict(实验类型='Q4残留ALE网格导数项诊断',方程约定='右端增加 b*dU/dxi，b=-xi*Rdot/R；温度项乘rho*cp',残项离散='内点中心差分；表面Robin导数闭合',节点数=201,时间步_s=60.0,共同仿真终点_s=end,
+      基线终止时间_s=ev0,残留ALE终止时间_s=ev1,基线终止时间_h=ev0/3600,残留ALE终止时间_h=ev1/3600,终止时间差_h=(ev1-ev0)/3600,终止时间相对偏差_百分比=100*(ev1-ev0)/ev0,
+      最大含水率绝对差=float(abs(delta[mi,mj])),最大差对应时间_s=float(base['t'][mi]),最大差对应材料坐标=float(mj/200),最大差对应物理半径_cm=radius(float(base['t'][mi]))*mj/200*100,
+      基线终止时实验组中心含水率=float(field_at(ale,ev0)[0]),实验组终止时基线中心含水率=float(field_at(base,ev1)[0]),
+      残留项累计平均含水率变化=float(np.sum(ale['residual_rate'][1:])*60),
+      基线复算最大差=regression,两组径向递增最大值=max(float(np.diff(d['C'],axis=1).max()) for d in [base,ale]),
+      全域最大值偏离中心最大值=max(float((d['C'].max(axis=1)-d['C'][:,0]).max()) for d in [base,ale]))
+    write_json(OUT/'Q4_ALE对照_指标.json',metrics)
+    # 把原始守恒残差换算到可读尺度，避免四位小数掩盖误差。
+    valid=dict(基线轨迹与生产数据一致=bool(regression<1e-8),基线复算差乘十亿=regression*1e9,
+      基线收支最大残差乘万亿=float(abs(base['balance_error'][1:]).max()*1e12),
+      实验组含残项收支最大残差乘万亿=float(abs(ale['balance_error'][1:]).max()*1e12),
+      数据全部有限=bool(all(np.isfinite(d['C']).all() and np.isfinite(d['T']).all() for d in [base,ale])))
+    if args.validate:
+        closed=run(False,end=36000,closed=True);closeda=run(True,end=36000,closed=True)
+        valid['均匀纯收缩漂移乘万亿']=max(float(abs(d['C']-C0).max()*1e12) for d in [closed,closeda])
+        refined0=run(False,dt=30,end=end);refined1=run(True,dt=30,end=end)
+        upwind=run(True,end=end,scheme='upwind')
+        valid['时间步三十秒_基线终止_h']=refined0['event']/3600
+        valid['时间步三十秒_实验组终止_h']=refined1['event']/3600
+        valid['时间步三十秒_相对偏差_百分比']=100*(refined1['event']/refined0['event']-1)
+        valid['迎风残项终止_h']=upwind['event']/3600
+        valid['迎风与中心差分终止差_h']=(upwind['event']-ev1)/3600
+    write_json(OUT/'Q4_ALE对照_验证.json',valid)
+    table=df[['时间_h','中心含水率_基线','中心含水率_残留ALE','中心差值','表面差值']].to_string(index=False,formatters={c:(lambda x:f'{x:.4f}') for c in ['时间_h','中心含水率_基线','中心含水率_残留ALE','中心差值','表面差值']})
+    discussion=f'''# 问题四残留网格对流项对照结果与论述\n\n在材料坐标 $\\xi=r/R(t)$ 下，正确相对平流系数为 $(v_s-\\xi\\dot R)/R$。均匀径向收缩时 $v_s=\\xi\\dot R$，因此这一系数严格为零。ALE方法本身没有问题；错误来自保留了本应抵消的网格导数项。\n\n本次对照保持201个节点、60.0000 s时间步、半径PCHIP插值、题给变物性、边界条件与Picard容差一致。诊断组在温度和水分方程右端保留 $-\\xi\\dot R/R\\,\\partial_\\xi U$，温度方程相应乘体积热容。残项采用内点中心差分、表面Robin导数闭合。两组均算至 {end:.4f} s，并分别插值得到全域含水率首次低于0.1500的时刻。\n\n基线干燥时间为 {ev0/3600:.4f} h，残项组为 {ev1/3600:.4f} h，提前 {(ev0-ev1)/3600:.4f} h，相对偏差 {100*(ev1-ev0)/ev0:.4f}%。这些是当前离散下重新计算的结果，没有混用清单中的历史数值。\n\n{table}\n\n收缩阶段Rdot为负，含水率通常沿半径递减，因此右端残项额外降低局部含水率，形成虚假失水。早期几何变化快且水分梯度较大，偏差累积明显；后期收缩减弱，瞬时残项趋小，但先前形成的含水率偏差仍会提前触发终止判据。全时空含水率最大绝对差为 {abs(delta[mi,mj]):.4f}，出现于 {base['t'][mi]:.4f} s。\n\n不能用“各自终止时中心含水率均为0.1500”说明两组一致，因为这是终止判据规定的结果。应比较相同时刻：实验组达标时，基线中心含水率仍为 {field_at(base,ev1)[0]:.4f}；基线达标时，实验组中心含水率已为 {field_at(ale,ev0)[0]:.4f}。\n\n因此，残留网格项会造成系统性干燥时间偏差，必须消除，而不能作为收缩的物理贡献加入主模型。正确ALE实现应与材料坐标模型等价。均匀场纯收缩检验只是必要条件，因为梯度为零时错误残项也会消失；还需检查非均匀场的相对速度抵消及含残项/不含残项的离散水分收支。\n'''
+    (OUT/'Q4_ALE对照_说明.md').write_text(discussion,encoding='utf-8')
+    manifest=dict(复现命令='python3 src/q4_ale_compare.py --validate',绘图命令='python3 src/plot_q4_ale_compare.py',输入哈希={f:hashlib.sha256((ROOT/'results'/f).read_bytes()).hexdigest() for f in ['inputs.npz','q4.npz']},随机性='无',Python=platform.python_version(),NumPy=np.__version__)
+    write_json(OUT/'Q4_ALE对照_复现清单.json',manifest)
+    print(json.dumps(metrics,ensure_ascii=False,indent=2));print(json.dumps(valid,ensure_ascii=False,indent=2))
+if __name__=='__main__':main()

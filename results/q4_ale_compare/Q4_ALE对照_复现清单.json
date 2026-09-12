@@ -1,0 +1,11 @@
+{
+  "复现命令": "python3 src/q4_ale_compare.py --validate",
+  "绘图命令": "python3 src/plot_q4_ale_compare.py",
+  "输入哈希": {
+    "inputs.npz": "445e0d7a69406a0bb64aeadec9b46d561599f840c5731be4d3923a10b9c4f2af",
+    "q4.npz": "ca2dd9349e7860b5082d74200f1a572f69ed3015c8061d3d72905a4a55cea303"
+  },
+  "随机性": "无",
+  "Python": "3.14.6",
+  "NumPy": "2.4.1"
+}
