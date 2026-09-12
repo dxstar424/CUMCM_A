@@ -32,25 +32,25 @@ fig, axs = plt.subplots(2, 2, figsize=(7.2, 5.5), constrained_layout=True)
 ax = axs[0, 0]
 norm = Normalize(vmin=float(dT.min()), vmax=0.0)
 im = ax.pcolormesh(TT, RR, dT.T, cmap='Blues_r', norm=norm, shading='auto')
-ax.set_xlabel('时间 / h'); ax.set_ylabel('半径 / cm')
+ax.set_xlabel('时间 / h'); ax.set_ylabel('半径 / cm'); ax.set_title('(a) 温度差时空分布', loc='left', pad=6)
 cb = fig.colorbar(im, ax=ax, pad=0.02, aspect=24); cb.set_label('温度差 / ℃'); cb.ax.yaxis.set_major_formatter(FormatStrFormatter('%.4f'))
 # 含水率差时空图
 ax = axs[0, 1]
 vlim = max(abs(float(dC.min())), abs(float(dC.max())), 1e-12)
 norm = TwoSlopeNorm(vmin=-vlim, vcenter=0.0, vmax=vlim)
 im = ax.pcolormesh(TT, RR, dC.T, cmap='RdBu_r', norm=norm, shading='auto')
-ax.set_xlabel('时间 / h'); ax.set_ylabel('半径 / cm')
+ax.set_xlabel('时间 / h'); ax.set_ylabel('半径 / cm'); ax.set_title('(b) 含水率差时空分布', loc='left', pad=6)
 cb = fig.colorbar(im, ax=ax, pad=0.02, aspect=24); cb.set_label('含水率差'); cb.ax.yaxis.set_major_formatter(FormatStrFormatter('%.4f'))
 # 终点温度径向剖面
 ax = axs[1, 0]
 ax.plot(r_cm, base['T'][-1], color='#1f4e79', lw=1.7, label='不含蒸发潜热')
 ax.plot(r_cm, latent['T'][-1], color='#c43c39', lw=1.7, label='含蒸发潜热')
-ax.set_xlabel('半径 / cm'); ax.set_ylabel('温度 / ℃'); ax.legend(frameon=False, fontsize=7, loc='best')
+ax.set_xlabel('半径 / cm'); ax.set_ylabel('温度 / ℃'); ax.set_title('(c) 末时刻温度径向剖面', loc='left', pad=6); ax.legend(frameon=False, fontsize=7, loc='best')
 # 终点含水率径向剖面
 ax = axs[1, 1]
 ax.plot(r_cm, base['C'][-1], color='#1f4e79', lw=1.7, label='不含蒸发潜热')
 ax.plot(r_cm, latent['C'][-1], color='#c43c39', lw=1.7, label='含蒸发潜热')
-ax.set_xlabel('半径 / cm'); ax.set_ylabel('含水率'); ax.legend(frameon=False, fontsize=7, loc='best')
+ax.set_xlabel('半径 / cm'); ax.set_ylabel('含水率'); ax.set_title('(d) 末时刻含水率径向剖面', loc='left', pad=6); ax.legend(frameon=False, fontsize=7, loc='best')
 for ax in axs.flat:
     ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
     ax.grid(axis='y', color='#d9d9d9', lw=.5, alpha=.55)
