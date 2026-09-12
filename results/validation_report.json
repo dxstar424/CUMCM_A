@@ -1,6 +1,6 @@
 {
-  "zero_flux_max_C_error": 2.6645352591003757e-15,
-  "fixed_moving_max_error": 0.0021813573829092547,
+  "zero_flux_max_C_error": 0.0,
+  "fixed_moving_max_error": 0.0020362048709556824,
   "2d_shape": [
     1,
     8,

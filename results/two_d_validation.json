@@ -7,7 +7,7 @@
     12,
     18
   ],
-  "grid_change_max_C": 0.09803294458396294,
-  "grid_change_max_C_moisture": 0.4790329523004617,
+  "grid_change_max_C": 0.19778218514322532,
+  "grid_change_max_C_moisture": 7.079426072476025e-06,
   "note": "2D endpoint-transfer scenario; Q4 production remains 1D."
 }

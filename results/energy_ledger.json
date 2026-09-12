@@ -1,20 +1,20 @@
 {
-  "baseline_q3_event_s": 206417.16641713813,
-  "baseline_q4_event_s": 183279.47990428808,
-  "latent_q3_event_s": 233406.2824287903,
-  "latent_q4_event_s": 203742.0164446939,
+  "baseline_q3_event_s": 207128.51091273068,
+  "baseline_q4_event_s": 183950.69385973777,
+  "latent_q3_event_s": 207524.0250815492,
+  "latent_q4_event_s": 184033.04613916314,
   "q3_latent_energy": {
-    "E_conv_J": 1184652.5623625496,
-    "E_lat_J": 1194595.059811338,
-    "latent_fraction": 1.0083927539302833,
-    "surface_T_min_C": -7.916101452602177,
-    "surface_C_min": 0.05251003558196452
+    "E_conv_J": 21018.140512225993,
+    "E_lat_J": 0.0,
+    "latent_fraction": 0.0,
+    "surface_T_min_C": 28.0,
+    "surface_C_min": 0.05264933867010883
   },
   "q4_latent_energy": {
-    "E_conv_J": 608073.299534298,
-    "E_lat_J": 620576.2111994883,
-    "latent_fraction": 1.0205615205843865,
-    "surface_T_min_C": 1.8769255370610594,
-    "surface_C_min": 0.05248054409061831
+    "E_conv_J": 18001.50506983648,
+    "E_lat_J": 0.0,
+    "latent_fraction": 0.0,
+    "surface_T_min_C": 27.999999999999996,
+    "surface_C_min": 0.05261623351088234
   }
 }
