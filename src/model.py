@@ -1,9 +1,10 @@
 """Production runner for the unified CUMCM 2026 A model."""
 from __future__ import annotations
-import json, platform, sys, time
+import csv, json, platform, sys, time
 from pathlib import Path
 import numpy as np
-from openpyxl import load_workbook
+from openpyxl import Workbook, load_workbook
+from openpyxl.styles import Alignment, Font
 try:
     from src.solver import (ROOT, DATA, OUT, Config, air, radius, Tinf, Cbinf, Rmeas, solve_1d, solve_2d, interp_radial, reconstruct_center, surface_values as surface_values_solver, sha256)
 except ModuleNotFoundError:
@@ -48,17 +49,75 @@ def export_question(kind,data,name,moving=False):
     else: sheets={'Sheet1': C}
     write_book(OUT/name,sheets,headers,data['t'])
 
-def write_summary(data,kind,moving=False):
-    r=np.arange(0,2.0001,.5)*1e-2; vt=interp_moving(data['T'],data['t'],r) if moving else interp_fixed(data['T'],r); vc=interp_moving(data['C'],data['t'],r) if moving else interp_fixed(data['C'],r)
-    times=np.array([100,300,600,900,1200,1500,1800.]) if kind=='q1' else np.arange(.5,3.01,.5)*3600 if kind=='q2' else np.arange(6,55,6)*3600; times=times[times<=data['t'][-1]+1e-9]
-    a=[]; b=[]
-    for t in times:
-        j=int(np.argmin(abs(data['t']-t))); a.append(vt[j]); b.append(vc[j])
+def _summary_rows(data, kind, moving=False):
+    """Return the six paper-table rows using the units and layout of the problem."""
+    r=np.arange(0,2.0001,.5)*1e-2
+    vt=interp_moving(data['T'],data['t'],r) if moving else interp_fixed(data['T'],r)
+    vc=interp_moving(data['C'],data['t'],r) if moving else interp_fixed(data['C'],r)
+    st_all,sc_all,_=surface_values_solver(Config(kind='q4' if moving else 'q2',n=data['C'].shape[1],moving=moving),data)
     if kind=='q1':
-        np.savetxt(OUT/'表1_温度.csv',np.c_[times,a],delimiter=',',header='time,'+','.join(map(str,r*100)),comments=''); np.savetxt(OUT/'表2_水分浓度.csv',np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
+        times=np.array([100,300,600,900,1200,1500,1800.]); unit='s'
     elif kind=='q2':
-        np.savetxt(OUT/'表3_温度.csv',np.c_[times,a],delimiter=',',header='time,'+','.join(map(str,r*100)),comments=''); np.savetxt(OUT/'表4_水分浓度.csv',np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
-    else: np.savetxt(OUT/('表5_水分浓度.csv' if kind=='q3' else '表6_水分浓度.csv'),np.c_[times,b],delimiter=',',header='time,'+','.join(map(str,r*100)),comments='')
+        times=np.arange(.5,3.01,.5)*3600; unit='h'
+    else:
+        times=np.arange(6,55,6)*3600; unit='h'
+    times=times[times<=data['t'][-1]+1e-9]
+    rows=[]
+    for t in times:
+        j=int(np.argmin(abs(data['t']-t)))
+        rowt,rowc=vt[j],vc[j]
+        if moving:
+            rowt=np.r_[rowt,st_all[j]]; rowc=np.r_[rowc,sc_all[j]]
+        label=f'{t/3600:g}' if unit=='h' else f'{int(t)}'
+        rows.append((label,rowt,rowc))
+    if kind in ('q3','q4') and data.get('event') is not None:
+        te=float(data['event'])
+        # The event state lies between two stored 60 s reports. Linear
+        # interpolation keeps the paper table consistent with the event root.
+        T=np.array([np.interp(te,data['t'],data['T'][:,j]) for j in range(data['T'].shape[1])])
+        C=np.array([np.interp(te,data['t'],data['C'][:,j]) for j in range(data['C'].shape[1])])
+        d={'t':np.array([te]),'T':T[None,:],'C':C[None,:]}
+        vs=surface_values_solver(Config(kind='q4' if moving else 'q2',n=C.size,moving=moving),d)[:2]
+        rr=np.arange(0,2.0001,.5)*1e-2
+        rowc=interp_moving(d['C'],d['t'],rr)[0] if moving else interp_fixed(d['C'],rr)[0]
+        rowt=interp_moving(d['T'],d['t'],rr)[0] if moving else interp_fixed(d['T'],rr)[0]
+        if moving:
+            rowc=np.r_[rowc,float(vs[1][0])]; rowt=np.r_[rowt,float(vs[0][0])]
+        rows.append((f'烘干结束时间={te/3600:.4f} h',rowt,rowc))
+    return rows, r*100
+
+def _write_chinese_table(path, title, rows, headers, values_index):
+    """Write a paper-style table with Chinese header and four-decimal values."""
+    path.parent.mkdir(parents=True,exist_ok=True)
+    header_cells=[f'{float(x):g}' if isinstance(x,(int,float,np.integer,np.floating)) else str(x) for x in headers]
+    with path.open('w',encoding='utf-8-sig',newline='') as f:
+        w=csv.writer(f); w.writerow([title]+header_cells)
+        for label,tvals,cvals in rows:
+            vals=cvals if values_index=='C' else tvals
+            w.writerow([label]+['' if not np.isfinite(v) else f'{float(v):.4f}' for v in vals])
+    wb=Workbook(); ws=wb.active; ws.title=path.stem[:31]
+    ws.append([title]+header_cells)
+    for label,t,c in rows:
+        vals=c if values_index=='C' else t
+        ws.append([label]+[None if not np.isfinite(v) else float(v) for v in vals])
+    for cell in ws[1]:
+        cell.font=Font(bold=True); cell.alignment=Alignment(horizontal='center',vertical='center')
+    for row in ws.iter_rows(min_row=2):
+        for cell in row[1:]: cell.number_format='0.0000'
+    ws.freeze_panes='B2'; ws.column_dimensions['A'].width=24
+    wb.save(path.with_suffix('.xlsx'))
+
+def write_summary(data,kind,moving=False):
+    rows,headers=_summary_rows(data,kind,moving)
+    if kind=='q1':
+        _write_chinese_table(OUT/'表1_温度.csv','时间/s\\到药材中心的距离/cm',rows,headers,'T')
+        _write_chinese_table(OUT/'表2_水分浓度.csv','时间/s\\到药材中心的距离/cm',rows,headers,'C')
+    elif kind=='q2':
+        _write_chinese_table(OUT/'表3_温度.csv','时间/h\\到药材中心的距离/cm',rows,headers,'T')
+        _write_chinese_table(OUT/'表4_水分浓度.csv','时间/h\\到药材中心的距离/cm',rows,headers,'C')
+    else:
+        if moving: headers=list(headers)+['药材表面']
+        _write_chinese_table(OUT/('表5_水分浓度.csv' if kind=='q3' else '表6_水分浓度.csv'),'时间/h\\到药材中心的距离/cm',rows,headers,'C')
 
 def energy(data,cfg):
     st,sc,J=surface_values_solver(cfg,data); t=data['t']; R=np.array([Rmeas(x) if cfg.moving else R0 for x in t]); A=2*np.pi*R*.25
