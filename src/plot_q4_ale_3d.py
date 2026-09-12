@@ -37,10 +37,11 @@ ev0=float(base['event'])/3600; ev1=float(ale['event'])/3600
 for ax in axes:
     ax.plot([ev0,ev0],[0,1],[0,0],color='#1f4e79',lw=1.0,ls='--',alpha=.85)
     ax.plot([ev1,ev1],[0,1],[0,0],color='#c43c39',lw=1.0,ls=':',alpha=.85)
-# 子图标题统一置于图框下方，避免遮挡三维曲面。
+# 使用图级文字设置统一水平基线，避免三维坐标框造成标题高低不齐。
 labels=['（a）材料坐标基线','（b）保留残留网格项','（c）残留网格项引起的含水率差值']
-for ax,label in zip(axes,labels): ax.text2D(.5,-.18,label,transform=ax.transAxes,ha='center',va='top',fontsize=10)
-fig.text(.5,.015,'蓝色虚线：基线终止；红色点线：残留网格项终止',ha='center',fontsize=8)
-fig.subplots_adjust(left=.015,right=.985,bottom=.20,top=.98,wspace=.015)
+for xpos,label in zip((.17,.50,.83),labels):
+    fig.text(xpos,.070,label,ha='center',va='center',fontsize=10)
+fig.text(.50,.018,'蓝色虚线：基线终止；红色点线：残留网格项终止',ha='center',va='center',fontsize=8)
+fig.subplots_adjust(left=.015,right=.985,bottom=.145,top=.98,wspace=.015)
 for ext in ('png','svg','pdf'): fig.savefig(OUT/f'Q4_ALE三维时空曲面对照.{ext}',dpi=400,bbox_inches='tight')
 plt.close(fig)
