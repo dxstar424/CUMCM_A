@@ -1,0 +1,26 @@
+{
+  "model": "2D axisymmetric r-z Q1 finite-volume backward Euler",
+  "Nr": 41,
+  "Nz": 51,
+  "dt_s": 60.0,
+  "end_h": 72,
+  "geometry": {
+    "R_m": 0.02,
+    "L_m": 0.25
+  },
+  "parameters": {
+    "rho": 820.0,
+    "cp": 2600.0,
+    "k": 0.36,
+    "D_formula": "7e-9 exp(-0.89/C)",
+    "h": 25.0,
+    "hm": 0.0
+  },
+  "boundary": "Robin on r=R and z=0,L; symmetry at r=0",
+  "environment": "附件1实测边界；72小时范围内最后实测值保持不变",
+  "source_hashes": {
+    "附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "model.py": "5ff4a35daa0a1d4eabb004dc26f53c990597532bd66141c4c579f0c5b52a12a8"
+  },
+  "snapshots": "前4小时每0.5000小时，此后每1.0000小时"
+}

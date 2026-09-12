@@ -1,0 +1,83 @@
+[
+  {
+    "label": "face_harm",
+    "changes": {
+      "FACE_MODE": "harm"
+    },
+    "event_s": 212414.0407,
+    "event_h": 59.0039,
+    "first_strict_sample_s": 212460.0
+  },
+  {
+    "label": "D_0.9",
+    "changes": {
+      "D_SCALE": 0.9
+    },
+    "event_s": 227190.5422,
+    "event_h": 63.1085,
+    "first_strict_sample_s": 227220.0
+  },
+  {
+    "label": "D_1.1",
+    "changes": {
+      "D_SCALE": 1.1
+    },
+    "event_s": 190314.7539,
+    "event_h": 52.8652,
+    "first_strict_sample_s": 190320.0
+  },
+  {
+    "label": "hm_0.9",
+    "changes": {
+      "HM_SCALE": 0.9
+    },
+    "event_s": 209533.6569,
+    "event_h": 58.2038,
+    "first_strict_sample_s": 209580.0
+  },
+  {
+    "label": "hm_1.1",
+    "changes": {
+      "HM_SCALE": 1.1
+    },
+    "event_s": 204771.4246,
+    "event_h": 56.881,
+    "first_strict_sample_s": 204780.0
+  },
+  {
+    "label": "h_0.9",
+    "changes": {
+      "H_SCALE": 0.9
+    },
+    "event_s": 206897.6947,
+    "event_h": 57.4716,
+    "first_strict_sample_s": 206940.0
+  },
+  {
+    "label": "h_1.1",
+    "changes": {
+      "H_SCALE": 1.1
+    },
+    "event_s": 206840.9137,
+    "event_h": 57.4558,
+    "first_strict_sample_s": 206880.0
+  },
+  {
+    "label": "Cb_0.045",
+    "changes": {
+      "PLATEAU_CB": 0.045
+    },
+    "event_s": 206422.0361,
+    "event_h": 57.3395,
+    "first_strict_sample_s": 206460.0
+  },
+  {
+    "label": "Cb_0.055",
+    "changes": {
+      "PLATEAU_CB": 0.055
+    },
+    "event_s": 207362.2395,
+    "event_h": 57.6006,
+    "first_strict_sample_s": 207420.0
+  }
+]

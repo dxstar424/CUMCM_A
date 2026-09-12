@@ -1,0 +1,54 @@
+{
+  "run": {
+    "dt_s": 60,
+    "end_h": 72,
+    "Nr": 41,
+    "Nz": 51
+  },
+  "comparison": {
+    "max_abs_center_dT_C": 0.0007,
+    "time_of_max_abs_center_dT_h": 2.0,
+    "max_abs_midplane_dT_C": 0.0007,
+    "max_abs_midplane_dC": 0.0,
+    "max_abs_center_dC": 0.0,
+    "72h_center_dT_C": -0.0,
+    "72h_center_dC": -0.0
+  },
+  "end_effect": [
+    {
+      "time_h": 0.5,
+      "axis_end_minus_mid_C": 2.9694,
+      "depth_threshold_0.01C_m": 0.0564
+    },
+    {
+      "time_h": 1.0,
+      "axis_end_minus_mid_C": 2.3866,
+      "depth_threshold_0.01C_m": 0.0711
+    },
+    {
+      "time_h": 2.0,
+      "axis_end_minus_mid_C": 0.4532,
+      "depth_threshold_0.01C_m": 0.0711
+    },
+    {
+      "time_h": 4.0,
+      "axis_end_minus_mid_C": 0.0058,
+      "depth_threshold_0.01C_m": 0.0
+    },
+    {
+      "time_h": 8.0,
+      "axis_end_minus_mid_C": 0.0,
+      "depth_threshold_0.01C_m": 0.0
+    },
+    {
+      "time_h": 24.0,
+      "axis_end_minus_mid_C": 0.0,
+      "depth_threshold_0.01C_m": 0.0
+    },
+    {
+      "time_h": 72.0,
+      "axis_end_minus_mid_C": 0.0,
+      "depth_threshold_0.01C_m": 0.0
+    }
+  ]
+}

@@ -1,10 +1,52 @@
 {
-  "zero_flux_max_C_error": 0.0,
-  "fixed_moving_max_error": 0.0020362048709556824,
-  "2d_shape": [
-    1,
-    8,
-    6
-  ],
-  "positive": true
+  "status": "numerically_checked_1d_baseline",
+  "model": "M0",
+  "q1_mass": {
+    "storage_delta": -0.0001,
+    "boundary_loss_signed": -0.0001,
+    "residual": 0.0,
+    "relative_residual": 0.0
+  },
+  "q2_mass": {
+    "storage_delta": -0.0002,
+    "boundary_loss_signed": -0.0002,
+    "residual": 0.0,
+    "relative_residual": 0.0
+  },
+  "q3_mass": {
+    "storage_delta": -0.0005,
+    "boundary_loss_signed": -0.0005,
+    "residual": 0.0,
+    "relative_residual": 0.0024
+  },
+  "q4_mass": {
+    "storage_delta": -0.1356,
+    "boundary_loss_signed": -0.1359,
+    "residual": 0.0003,
+    "relative_residual": 0.0024
+  },
+  "q1_monotonicity": {
+    "max_outward_increase": 0.0,
+    "center_max_violation": 0.0
+  },
+  "q2_monotonicity": {
+    "max_outward_increase": 0.0,
+    "center_max_violation": 0.0
+  },
+  "q3_monotonicity": {
+    "max_outward_increase": 0.0,
+    "center_max_violation": 0.0
+  },
+  "q4_monotonicity": {
+    "max_outward_increase": 0.0,
+    "center_max_violation": 0.0
+  },
+  "positive_finite": true,
+  "Bi_T": 1.3889,
+  "Bi_m": 3.2404,
+  "Fo_T_1800": 0.76,
+  "Fo_m_1800": 0.022,
+  "two_d_status": "已独立完成问题一二维轴对称72小时验证",
+  "note": "Mass residuals use output-grid trapezoidal flux; the 2D percentage in the source is not reproduced here.",
+  "two_d_output": "results/axisym_q1_72h"
 }

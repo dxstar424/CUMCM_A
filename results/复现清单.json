@@ -1,63 +1,48 @@
 {
-  "schema_version": 2,
-  "runtime": {
-    "python": "3.12.13",
-    "numpy": "2.5.3"
-  },
-  "inputs": [
+  "说明": "依据最终决策清单与论文初稿确定的最终基线复现清单",
+  "输入文件": [
     {
-      "path": "A题/A题.pdf",
-      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+      "路径": "data/附件/附件1.xlsx",
+      "哈希值": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
     },
     {
-      "path": "A题/附件/附件1.xlsx",
-      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
-    },
-    {
-      "path": "A题/附件/附件2.xlsx",
-      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
-    },
-    {
-      "path": "A题/附件/附件3/result4.xlsx",
-      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
-    },
-    {
-      "path": "A题/附件/附件3/result2.xlsx",
-      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
-    },
-    {
-      "path": "A题/附件/附件3/result3.xlsx",
-      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
-    },
-    {
-      "path": "A题/附件/附件3/result1.xlsx",
-      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      "路径": "data/附件/附件2.xlsx",
+      "哈希值": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
     }
   ],
-  "configuration": {
-    "N": 160,
-    "baseline_latent": false,
-    "latent_Lv_J_per_kg": [
-      2300000.0,
-      2400000.0,
-      2500000.0
-    ],
-    "q4_gamma_scenarios": [
-      0,
-      0.5,
-      1
-    ],
-    "event_threshold": 0.15
+  "主模型配置": {
+    "网格节点数": 201,
+    "问题一时间步_秒": 1.0,
+    "问题二时间步_秒": 1.0,
+    "问题三四时间步_秒": 60.0,
+    "界面扩散系数": "算术平均为基准",
+    "非线性迭代": "皮卡迭代",
+    "问题三四环境切换时刻_秒": 7200.0,
+    "环境温度_摄氏度": 50.0,
+    "环境含水率": 0.05,
+    "潜热": "仅作诊断，不进入主模型"
   },
-  "outputs": [
+  "完整结果": [
     "result1.xlsx",
     "result2.xlsx",
     "result3.xlsx",
-    "result4.xlsx",
-    "event_summary.json",
-    "energy_ledger.json",
-    "two_d_validation.json"
+    "result4.xlsx"
   ],
-  "reproduce_command": "/Users/dxstarpomdx/studyu/self_ss/mcm/2027/mcm_A/.venv/bin/python src/model.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/mcm_A/.venv/bin/python src/postprocess.py",
-  "elapsed_s": 14.403801202774048
+  "正文小表": [
+    "表一_问题一温度.csv",
+    "表二_问题一含水率.csv",
+    "表三_问题二温度.csv",
+    "表四_问题二含水率.csv",
+    "表五_问题三长时含水率.csv",
+    "表六_问题四收缩含水率.csv",
+    "正文六个小表.xlsx"
+  ],
+  "二维验证": "results/axisym_q1_72h；问题一二维轴对称仿真至72.0000小时",
+  "复现命令": [
+    "python src/model.py",
+    "python src/rebuild_full_workbooks.py",
+    "python src/rebuild_chinese_tables.py",
+    "python src/round_workbooks.py",
+    "python src/axisym_q1_72h.py"
+  ]
 }

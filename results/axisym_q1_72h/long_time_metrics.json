@@ -1,0 +1,178 @@
+{
+  "source": "axisym_q1_72h/manifest.json",
+  "area_ratio_end_to_lateral": 0.08,
+  "end_face_fraction_total_surface": 0.0741,
+  "snapshots_h": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    24.0,
+    48.0,
+    72.0
+  ],
+  "comparison": {
+    "0.5": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0002,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0362,
+          "dC": -0.0
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": 0.3146,
+          "dC": -0.0
+        }
+      }
+    },
+    "1": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0033,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.1114,
+          "dC": -0.0
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": 0.4866,
+          "dC": -0.0001
+        }
+      }
+    },
+    "2": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0047,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0529,
+          "dC": -0.0
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": 0.1448,
+          "dC": -0.0021
+        }
+      }
+    },
+    "4": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0001,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0007,
+          "dC": -0.0001
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": 0.0021,
+          "dC": -0.0156
+        }
+      }
+    },
+    "8": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0,
+          "dC": -0.0013
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": 0.0,
+          "dC": -0.0373
+        }
+      }
+    },
+    "24": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0,
+          "dC": -0.0031
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": -0.0,
+          "dC": -0.0259
+        }
+      }
+    },
+    "48": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0,
+          "dC": -0.0021
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": -0.0,
+          "dC": -0.0143
+        }
+      }
+    },
+    "72": {
+      "axial_distance_from_midplane_cm": {
+        "4": {
+          "z_cm": 8.5784,
+          "dT_C": 0.0,
+          "dC": -0.0
+        },
+        "8": {
+          "z_cm": 4.6569,
+          "dT_C": 0.0,
+          "dC": -0.0016
+        },
+        "10": {
+          "z_cm": 2.6961,
+          "dT_C": -0.0,
+          "dC": -0.0102
+        }
+      }
+    }
+  },
+  "long_time_72h": {
+    "midplane_center_C": 50.165,
+    "midplane_center_Cw": 0.3599,
+    "midplane_surface_Cw": 0.0552,
+    "end_center_surface_Cw": 0.0555,
+    "center_dT_vs_matched_1d_C": -0.0,
+    "center_dC_vs_matched_1d": -0.0
+  }
+}

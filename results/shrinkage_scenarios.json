@@ -1,11 +1,26 @@
-{
-  "0": {
-    "H_over_H0_at_last": 1.0
+[
+  {
+    "gamma": 0,
+    "event_h": 51.1139,
+    "R_end_over_R0": 0.6,
+    "L_end_over_L0": 1.0,
+    "V_end_over_V0": 0.36,
+    "field_effect": "none in 1D material-coordinate baseline; geometry/volume diagnostic only"
   },
-  "0.5": {
-    "H_over_H0_at_last": 0.7739509028355739
+  {
+    "gamma": 0.5,
+    "event_h": 51.1139,
+    "R_end_over_R0": 0.6,
+    "L_end_over_L0": 0.7746,
+    "V_end_over_V0": 0.2789,
+    "field_effect": "none in 1D material-coordinate baseline; geometry/volume diagnostic only"
   },
-  "1": {
-    "H_over_H0_at_last": 0.599
+  {
+    "gamma": 1,
+    "event_h": 51.1139,
+    "R_end_over_R0": 0.6,
+    "L_end_over_L0": 0.6,
+    "V_end_over_V0": 0.216,
+    "field_effect": "none in 1D material-coordinate baseline; geometry/volume diagnostic only"
   }
-}
+]
