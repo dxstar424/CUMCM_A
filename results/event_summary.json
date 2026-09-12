@@ -1,0 +1,16 @@
+{
+  "q3_continuous_s": 206417.16641713813,
+  "q3_continuous_h": 57.33810178253837,
+  "q4_continuous_s": 183279.47990428808,
+  "q4_continuous_h": 50.91096664008002,
+  "q3_first_strict_sample_s": 206460.0,
+  "q4_first_strict_sample_s": 183300.0,
+  "q3_max_at_first_sample": 0.14998748769840084,
+  "q4_max_at_first_sample": 0.14998941312068664,
+  "threshold": 0.15,
+  "event_definition": "max(cell moisture, center reconstruction, Robin surface)-threshold",
+  "N": 160,
+  "dt_q1_q2_s": 1,
+  "dt_q3_q4_s": 60,
+  "environment_continuation": "last measured value"
+}

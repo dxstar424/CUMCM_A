@@ -1,0 +1,193 @@
+{
+  "q1_time_grid": {
+    "ok": true,
+    "detail": [
+      0.0,
+      1800.0,
+      0.0
+    ]
+  },
+  "q1_finite_positive": {
+    "ok": true,
+    "detail": [
+      28.0,
+      36.76505208145131,
+      1.5291178680489252,
+      2.55
+    ]
+  },
+  "q1_shape": {
+    "ok": true,
+    "detail": [
+      1801,
+      160
+    ]
+  },
+  "q2_time_grid": {
+    "ok": true,
+    "detail": [
+      0.0,
+      10800.0,
+      0.0
+    ]
+  },
+  "q2_finite_positive": {
+    "ok": true,
+    "detail": [
+      28.0,
+      49.96551476793468,
+      1.0127808821931534,
+      2.5500000000000003
+    ]
+  },
+  "q2_shape": {
+    "ok": true,
+    "detail": [
+      10801,
+      160
+    ]
+  },
+  "q3_time_grid": {
+    "ok": true,
+    "detail": [
+      0.0,
+      206040.0,
+      0.0
+    ]
+  },
+  "q3_finite_positive": {
+    "ok": true,
+    "detail": [
+      28.0,
+      50.16500004961891,
+      0.06299580683893984,
+      2.55
+    ]
+  },
+  "q3_shape": {
+    "ok": true,
+    "detail": [
+      3435,
+      160
+    ]
+  },
+  "q4_time_grid": {
+    "ok": true,
+    "detail": [
+      0.0,
+      183000.0,
+      0.0
+    ]
+  },
+  "q4_finite_positive": {
+    "ok": true,
+    "detail": [
+      28.0,
+      50.165000000000035,
+      0.057602378567995625,
+      2.55
+    ]
+  },
+  "q4_shape": {
+    "ok": true,
+    "detail": [
+      3051,
+      160
+    ]
+  },
+  "q4_radius": {
+    "ok": true,
+    "detail": [
+      0.02,
+      0.012,
+      0.0
+    ]
+  },
+  "event_strict": {
+    "ok": true,
+    "detail": [
+      206038.48668443624,
+      182991.92151362967,
+      0.1499995575274047,
+      0.14999582822875668
+    ]
+  },
+  "result1.xlsx_sheets": {
+    "ok": true,
+    "detail": [
+      "温度",
+      "水分浓度"
+    ]
+  },
+  "result2.xlsx_sheets": {
+    "ok": true,
+    "detail": [
+      "温度",
+      "水分浓度"
+    ]
+  },
+  "result3.xlsx_sheets": {
+    "ok": true,
+    "detail": [
+      "Sheet1"
+    ]
+  },
+  "result4.xlsx_sheets": {
+    "ok": true,
+    "detail": [
+      "Sheet1"
+    ]
+  },
+  "result1.xlsx_readback": {
+    "ok": true,
+    "detail": [
+      1802,
+      22,
+      [
+        0,
+        1,
+        2
+      ]
+    ]
+  },
+  "result2.xlsx_readback": {
+    "ok": true,
+    "detail": [
+      10802,
+      22,
+      [
+        0,
+        1,
+        2
+      ]
+    ]
+  },
+  "result3.xlsx_readback": {
+    "ok": true,
+    "detail": [
+      3436,
+      22,
+      [
+        0,
+        60,
+        120
+      ]
+    ]
+  },
+  "result4.xlsx_readback": {
+    "ok": true,
+    "detail": [
+      3052,
+      23,
+      [
+        0,
+        60,
+        120
+      ]
+    ]
+  },
+  "all": {
+    "ok": true,
+    "detail": "final deterministic checks"
+  }
+}

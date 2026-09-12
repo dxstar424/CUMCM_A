@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.5.3"
+  },
+  "inputs": [
+    {
+      "path": "A题/A题.pdf",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "A题/附件/附件3/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "A题/附件/附件3/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    }
+  ],
+  "configuration": {
+    "N": 160,
+    "baseline_latent": false,
+    "latent_Lv_J_per_kg": [
+      2300000.0,
+      2400000.0,
+      2500000.0
+    ],
+    "q4_gamma_scenarios": [
+      0,
+      0.5,
+      1
+    ],
+    "event_threshold": 0.15
+  },
+  "outputs": [
+    "result1.xlsx",
+    "result2.xlsx",
+    "result3.xlsx",
+    "result4.xlsx",
+    "event_summary.json",
+    "energy_ledger.json",
+    "two_d_validation.json"
+  ],
+  "reproduce_command": "/Users/dxstarpomdx/studyu/self_ss/mcm/2027/mcm_A/.venv/bin/python src/model.py && /Users/dxstarpomdx/studyu/self_ss/mcm/2027/mcm_A/.venv/bin/python src/postprocess.py",
+  "elapsed_s": 29.05373525619507
+}

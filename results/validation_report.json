@@ -1,0 +1,10 @@
+{
+  "zero_flux_max_C_error": 2.6645352591003757e-15,
+  "fixed_moving_max_error": 0.0021813573829092547,
+  "2d_shape": [
+    1,
+    8,
+    6
+  ],
+  "positive": true
+}

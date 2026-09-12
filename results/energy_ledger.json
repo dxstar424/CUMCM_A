@@ -1,0 +1,20 @@
+{
+  "baseline_q3_event_s": 206417.16641713813,
+  "baseline_q4_event_s": 183279.47990428808,
+  "latent_q3_event_s": 233406.2824287903,
+  "latent_q4_event_s": 203742.0164446939,
+  "q3_latent_energy": {
+    "E_conv_J": 1184652.5623625496,
+    "E_lat_J": 1194595.059811338,
+    "latent_fraction": 1.0083927539302833,
+    "surface_T_min_C": -7.916101452602177,
+    "surface_C_min": 0.05251003558196452
+  },
+  "q4_latent_energy": {
+    "E_conv_J": 608073.299534298,
+    "E_lat_J": 620576.2111994883,
+    "latent_fraction": 1.0205615205843865,
+    "surface_T_min_C": 1.8769255370610594,
+    "surface_C_min": 0.05248054409061831
+  }
+}
