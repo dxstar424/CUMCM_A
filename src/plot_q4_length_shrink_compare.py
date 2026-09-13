@@ -11,8 +11,9 @@ if Path(font_path).exists():
     font_manager.fontManager.addfont(font_path)
     plt.rcParams["font.family"] = "Songti SC"
 plt.rcParams.update({"axes.unicode_minus": False, "font.size": 9,
-                     "axes.linewidth": 0.7, "xtick.direction": "in",
-                     "ytick.direction": "in"})
+                     "axes.linewidth": 0.8, "xtick.direction": "in",
+                     "ytick.direction": "in", "figure.facecolor": "white",
+                     "axes.facecolor": "#fbfcfe"})
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "results" / "q4_length_shrink_compare"
 q4 = np.load(ROOT / "results" / "q4.npz")
@@ -38,10 +39,11 @@ ax_left.axhline(0.15, color="#b63d3d", ls="--", lw=1.0, label="终止阈值")
 ax_left.set_xlabel("时间 / h")
 ax_left.set_ylabel("中心含水率")
 ax_left.set_ylim(0.0, 2.7)
-ax_left.grid(alpha=0.18)
+ax_left.grid(alpha=0.22, ls="--", lw=0.6)
 ax_left.text(0.58, 0.82, "包络最大宽度：0.0000", transform=ax_left.transAxes,
              ha="left", va="top", color="#1f4e79")
-ax_left.legend(frameon=False, fontsize=8, loc="upper right")
+ax_left.legend(frameon=True, facecolor="white", edgecolor="#c8d0d9",
+               framealpha=0.94, fontsize=8, loc="upper right")
 # 右图：左Y轴为长度和体积，右Y轴为干固体密度。
 ax_right_density = ax_right.twinx()
 for gamma, color in zip(gammas, colors):
@@ -57,11 +59,13 @@ ax_right.set_ylabel("长度比、体积比")
 ax_right_density.set_ylabel("干固体密度比")
 ax_right.set_ylim(0.0, 1.10)
 ax_right_density.set_ylim(0.8, 5.0)
-ax_right.grid(alpha=0.18)
+ax_right.grid(alpha=0.22, ls="--", lw=0.6)
 handles1, labels1 = ax_right.get_legend_handles_labels()
 handles2, labels2 = ax_right_density.get_legend_handles_labels()
-ax_right.legend(handles1 + handles2, labels1 + labels2, frameon=False, ncol=2,
-                fontsize=7.0, loc="upper right")
+ax_right.legend(handles1 + handles2, labels1 + labels2, frameon=True,
+                facecolor="white", edgecolor="#c8d0d9", framealpha=0.94,
+                ncol=3, fontsize=7.0, loc="lower center",
+                bbox_to_anchor=(0.50, 1.015), borderaxespad=0.0)
 for ax in (ax_left, ax_right, ax_right_density):
     ax.xaxis.set_major_formatter(FormatStrFormatter("%.4f"))
     ax.yaxis.set_major_formatter(FormatStrFormatter("%.4f"))
@@ -69,7 +73,7 @@ fig.text(0.27, 0.018, "（a）场变量等价性：中心含水率上下浮动�
          ha="center", va="center", fontsize=10)
 fig.text(0.73, 0.018, "（b）几何诊断：长度、体积与干固体密度比例",
          ha="center", va="center", fontsize=10)
-fig.subplots_adjust(left=0.07, right=0.93, bottom=0.15, top=0.98)
+fig.subplots_adjust(left=0.07, right=0.93, bottom=0.15, top=0.80)
 for ext in ("png", "svg", "pdf"):
     fig.savefig(OUT / f"Q4_长度失水收缩_等价模型对照.{ext}", dpi=400,
                 bbox_inches="tight")
