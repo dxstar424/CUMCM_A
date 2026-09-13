@@ -162,7 +162,7 @@ def main():
         mean_c0 = C0
         water_proxy0 = np.pi * R0**2 * L0 * mean_c0
         water_proxy_end = V_end * mean_c_end
-        rows.append({"gamma": g, "终止时间_s": ev, "终止时间_h": ev / 3600.0,
+        rows.append({"伽马": g, "终止时间_s": ev, "终止时间_h": ev / 3600.0,
                      "末时刻半径_m": radius(end), "末时刻长度_m": L_end,
                      "末时刻总体积_m3": V_end, "长度比": L_end / L0,
                      "体积比": V_end / V0, "终止时含水量代理": water_proxy_end,
@@ -170,7 +170,7 @@ def main():
                      "含水量代理损失比": 1.0 - water_proxy_end / water_proxy0,
                      "相对基线场最大差": float(np.max(abs(d["C"][:len(base["C"])] - base["C"]))),
                      "相对基线终止时间差_h": (ev - float(base["event"])) / 3600.0})
-        np.savez_compressed(OUT / f"Q4_长度收缩_gamma_{g:g}.npz", t=d["t"], T=d["T"], C=d["C"], event=ev, gamma=g)
+        np.savez_compressed(OUT / f"Q4_长度收缩_伽马_{g:.4f}.npz", t=d["t"], T=d["T"], C=d["C"], event=ev, gamma=g)
     df = pd.DataFrame(rows)
     df.to_csv(OUT / "Q4_长度失水收缩_对照结果.csv", index=False, encoding="utf-8-sig", float_format="%.4f")
     # Same-time center values demonstrate field equivalence directly.
@@ -180,24 +180,24 @@ def main():
         j = min(int(round(t / DT)), len(base["t"]) - 1)
         row = {"时间_s": float(base["t"][j]), "时间_h": float(base["t"][j] / 3600.0)}
         for d in runs:
-            g = d["gamma"]; row[f"中心含水率_gamma_{g:g}"] = float(d["C"][j, 0])
+            g = d["gamma"]; row[f"中心含水率_伽马_{g:.4f}"] = float(d["C"][j, 0])
         out.append(row)
     pd.DataFrame(out).to_csv(OUT / "Q4_长度失水收缩_关键时刻.csv", index=False, encoding="utf-8-sig", float_format="%.4f")
     metrics = {
         "实验名称": "Q4长度失水收缩等价模型",
         "模型定义": "R(t)=R0*s(t)，L(t)=L0*s(t)^gamma；三维轴对称控制体的体积、径向面和侧边界面积均显式乘2*pi*L(t)",
-        "gamma情景": [0.0, 0.5, 1.0], "节点数": N, "时间步_s": DT,
+        "伽马情景": [0.0, 0.5, 1.0], "节点数": N, "时间步_s": DT,
         "基线终止时间_h": float(base["event"] / 3600.0),
         "最大场差": max(r["相对基线场最大差"] for r in rows),
         "最大终止时间差_h": max(abs(r["相对基线终止时间差_h"]) for r in rows),
-        "长度收缩仅改变": "总长度、总体积和总失水量的几何换算；在1D径向局部方程中因子约去",
-        "结论": "gamma=0、0.5、1的局部温度/含水率轨迹和干燥终止时间数值等价；长度效应不能从当前题给径向数据独立反演",
+        "长度收缩仅改变": "总长度、总体积和体积含水量代理的几何换算；在一维径向局部方程中因子约去",
+        "结论": "伽马=0、0.5、1的局部温度/含水率轨迹和干燥终止时间数值等价；长度效应不能从当前题给径向数据独立反演",
     }
     (OUT / "Q4_长度失水收缩_指标.json").write_text(json.dumps(fmt(metrics), ensure_ascii=False, indent=2), encoding="utf-8")
     (OUT / "Q4_长度失水收缩_说明.md").write_text(
         "# 问题四长度失水收缩等价模型\n\n"
         "取 $R(t)=R_0s(t)$，并以参数 $\\gamma$ 表示长度收缩 $L(t)=L_0s(t)^\\gamma$。三维轴对称控制体中，体积、径向传质面和侧壁传质面分别为 $2\\pi L R^2V_i$、$2\\pi LR A_i$ 和 $2\\pi LR$。在材料坐标径向方程中，三类项含有相同的 $2\\pi L$ 因子，离散方程约去该因子，故局部场只由半径曲线和径向边界通量决定。\n\n"
-        "本次用 $\\gamma=0.0000,0.5000,1.0000$ 显式组装三维控制体并算至生产基线终点，节点数201、步长60.0000 s。结果见 `Q4_长度失水收缩_对照结果.csv` 与 `Q4_长度失水收缩_关键时刻.csv`；所有情景的终止时间与含水率轨迹在数值精度内一致，长度收缩只改变总体积和总失水量的换算。\n",
+        "本次用 $\\gamma=0.0000,0.5000,1.0000$ 显式组装三维控制体并算至生产基线终点，节点数201、步长60.0000秒。结果见 `Q4_长度失水收缩_对照结果.csv` 与 `Q4_长度失水收缩_关键时刻.csv`；所有情景的终止时间与含水率轨迹在数值精度内一致，长度收缩只改变总体积和体积含水量代理的换算。若干固体质量守恒，则总水质量也保持情景间一致。\n",
         encoding="utf-8",
     )
     manifest = {"命令": "python3 src/q4_length_shrink_compare.py", "输入": ["results/inputs.npz", "results/q4.npz"], "随机性": "无", "Python": platform.python_version(), "NumPy": np.__version__}
