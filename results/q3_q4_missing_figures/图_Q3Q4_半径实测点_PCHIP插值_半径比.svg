@@ -1,0 +1,3138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="487.236188pt" height="297.8758pt" viewBox="0 0 487.236188 297.8758" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-13T14:55:31.433371</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 297.8758 
+L 487.236188 297.8758 
+L 487.236188 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 46.292813 243.2012 
+L 440.276813 243.2012 
+L 440.276813 42.9548 
+L 46.292813 42.9548 
+z
+" style="fill: #fbfcfe"/>
+   </g>
+   <g id="axes_2">
+    <g id="patch_3">
+     <path d="M 440.276813 243.2012 
+L 440.276813 243.2012 
+L 440.276813 42.9548 
+L 440.276813 42.9548 
+z
+" style="fill: #fbfcfe"/>
+    </g>
+    <g id="matplotlib.axis_1"/>
+    <g id="matplotlib.axis_2">
+     <g id="ytick_1">
+      <g id="line2d_1">
+       <defs>
+        <path id="mbf9550c329" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+       </defs>
+       <g>
+        <use xlink:href="#mbf9550c329" x="440.276813" y="222.767894" style="stroke: #000000; stroke-width: 0.8"/>
+       </g>
+      </g>
+      <g id="text_1">
+       <!-- 0.6000 -->
+       <g transform="translate(443.776813 226.007894) scale(0.09 -0.09)">
+        <defs>
+         <path id="STSongti-SC-Black-30" d="M 1517 4448 
+Q 1792 4448 2045 4285 
+Q 2298 4122 2486 3840 
+Q 2675 3558 2787 3177 
+Q 2899 2797 2899 2362 
+Q 2899 1933 2790 1555 
+Q 2682 1178 2493 893 
+Q 2304 608 2054 445 
+Q 1805 282 1523 282 
+Q 1248 282 995 442 
+Q 742 602 550 880 
+Q 358 1158 246 1539 
+Q 134 1920 134 2355 
+Q 134 2797 246 3181 
+Q 358 3565 547 3846 
+Q 736 4128 985 4288 
+Q 1235 4448 1517 4448 
+z
+M 1517 518 
+Q 1869 518 1997 966 
+Q 2125 1414 2125 2362 
+Q 2125 3309 1993 3760 
+Q 1862 4211 1517 4211 
+Q 1171 4211 1040 3763 
+Q 909 3315 909 2362 
+Q 909 518 1517 518 
+z
+" transform="scale(0.015625)"/>
+         <path id="STSongti-SC-Black-2e" d="M 704 294 
+Q 538 294 422 409 
+Q 307 525 307 691 
+Q 307 858 422 973 
+Q 538 1088 704 1088 
+Q 870 1088 985 973 
+Q 1101 858 1101 691 
+Q 1101 525 985 409 
+Q 870 294 704 294 
+z
+" transform="scale(0.015625)"/>
+         <path id="STSongti-SC-Black-36" d="M 2458 4467 
+L 2509 4346 
+Q 2138 4141 1846 3926 
+Q 1555 3712 1356 3430 
+Q 1158 3149 1056 2761 
+Q 954 2374 954 1824 
+Q 954 1645 973 1414 
+Q 992 1184 1053 976 
+Q 1114 768 1235 627 
+Q 1357 486 1562 486 
+Q 1824 486 1987 739 
+Q 2150 992 2150 1562 
+Q 2150 2042 1996 2282 
+Q 1843 2522 1555 2522 
+Q 1434 2522 1318 2470 
+L 1267 2637 
+Q 1370 2682 1482 2704 
+Q 1594 2726 1747 2726 
+Q 2278 2726 2560 2425 
+Q 2842 2125 2842 1626 
+Q 2842 1318 2736 1072 
+Q 2630 826 2451 650 
+Q 2272 474 2035 378 
+Q 1798 282 1530 282 
+Q 1190 282 944 403 
+Q 698 525 534 739 
+Q 371 954 294 1242 
+Q 218 1530 218 1862 
+Q 218 2426 394 2864 
+Q 570 3302 874 3622 
+Q 1178 3942 1587 4150 
+Q 1997 4358 2458 4467 
+z
+" transform="scale(0.015625)"/>
+        </defs>
+        <use xlink:href="#STSongti-SC-Black-30"/>
+        <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+        <use xlink:href="#STSongti-SC-Black-36" transform="translate(68.799988 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       </g>
+      </g>
+     </g>
+     <g id="ytick_2">
+      <g id="line2d_2">
+       <g>
+        <use xlink:href="#mbf9550c329" x="440.276813" y="181.901282" style="stroke: #000000; stroke-width: 0.8"/>
+       </g>
+      </g>
+      <g id="text_2">
+       <!-- 0.7000 -->
+       <g transform="translate(443.776813 185.141282) scale(0.09 -0.09)">
+        <defs>
+         <path id="STSongti-SC-Black-37" d="M 358 4384 
+L 2822 4384 
+L 2822 4275 
+Q 2714 4083 2522 3596 
+Q 2330 3110 2042 2310 
+Q 1485 736 1427 384 
+L 1043 384 
+Q 1120 717 1222 1065 
+Q 1325 1414 1462 1817 
+Q 1600 2221 1779 2691 
+Q 1958 3162 2189 3731 
+L 634 3731 
+Q 467 3731 461 3648 
+L 410 3379 
+L 269 3379 
+L 358 4384 
+z
+" transform="scale(0.015625)"/>
+        </defs>
+        <use xlink:href="#STSongti-SC-Black-30"/>
+        <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+        <use xlink:href="#STSongti-SC-Black-37" transform="translate(68.799988 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       </g>
+      </g>
+     </g>
+     <g id="ytick_3">
+      <g id="line2d_3">
+       <g>
+        <use xlink:href="#mbf9550c329" x="440.276813" y="141.034669" style="stroke: #000000; stroke-width: 0.8"/>
+       </g>
+      </g>
+      <g id="text_3">
+       <!-- 0.8000 -->
+       <g transform="translate(443.776813 144.274669) scale(0.09 -0.09)">
+        <defs>
+         <path id="STSongti-SC-Black-38" d="M 1069 2368 
+Q 282 2758 282 3424 
+Q 282 3622 368 3804 
+Q 454 3987 617 4131 
+Q 781 4275 1005 4361 
+Q 1229 4448 1510 4448 
+Q 1760 4448 1968 4377 
+Q 2176 4307 2326 4185 
+Q 2477 4064 2560 3901 
+Q 2643 3738 2643 3552 
+Q 2643 3366 2588 3232 
+Q 2534 3098 2438 2992 
+Q 2342 2886 2201 2793 
+Q 2061 2701 1888 2598 
+Q 2202 2445 2381 2297 
+Q 2560 2150 2646 2006 
+Q 2733 1862 2752 1718 
+Q 2771 1574 2771 1434 
+Q 2771 1190 2665 979 
+Q 2560 768 2384 614 
+Q 2208 461 1971 371 
+Q 1734 282 1466 282 
+Q 1184 282 950 362 
+Q 717 442 550 576 
+Q 384 710 294 892 
+Q 205 1075 205 1280 
+Q 205 1434 246 1584 
+Q 288 1734 390 1875 
+Q 493 2016 659 2137 
+Q 826 2259 1069 2368 
+z
+M 1683 2707 
+Q 1920 2854 2022 3046 
+Q 2125 3238 2125 3526 
+Q 2125 3827 1968 4019 
+Q 1811 4211 1472 4211 
+Q 1158 4211 1011 4035 
+Q 864 3859 864 3597 
+Q 864 3334 1046 3126 
+Q 1229 2918 1683 2707 
+z
+M 1254 2266 
+Q 1107 2176 1011 2077 
+Q 915 1978 860 1866 
+Q 806 1754 784 1622 
+Q 762 1491 762 1331 
+Q 762 941 976 710 
+Q 1190 480 1517 480 
+Q 2163 480 2163 1235 
+Q 2163 1414 2108 1555 
+Q 2054 1696 1942 1817 
+Q 1830 1939 1657 2048 
+Q 1485 2157 1254 2266 
+z
+" transform="scale(0.015625)"/>
+        </defs>
+        <use xlink:href="#STSongti-SC-Black-30"/>
+        <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+        <use xlink:href="#STSongti-SC-Black-38" transform="translate(68.799988 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       </g>
+      </g>
+     </g>
+     <g id="ytick_4">
+      <g id="line2d_4">
+       <g>
+        <use xlink:href="#mbf9550c329" x="440.276813" y="100.168057" style="stroke: #000000; stroke-width: 0.8"/>
+       </g>
+      </g>
+      <g id="text_4">
+       <!-- 0.9000 -->
+       <g transform="translate(443.776813 103.408057) scale(0.09 -0.09)">
+        <defs>
+         <path id="STSongti-SC-Black-39" d="M 1658 2022 
+Q 1485 1939 1299 1939 
+Q 1069 1939 864 2009 
+Q 659 2080 505 2221 
+Q 352 2362 265 2579 
+Q 179 2797 179 3091 
+Q 179 3386 281 3635 
+Q 384 3885 560 4067 
+Q 736 4250 969 4349 
+Q 1203 4448 1466 4448 
+Q 1747 4448 1984 4339 
+Q 2221 4230 2390 4022 
+Q 2560 3814 2656 3520 
+Q 2752 3226 2752 2861 
+Q 2752 2374 2582 1932 
+Q 2413 1491 2118 1142 
+Q 1824 794 1417 560 
+Q 1011 326 544 262 
+L 518 403 
+Q 915 506 1187 742 
+Q 1459 979 1628 1308 
+Q 1798 1638 1872 2051 
+Q 1946 2464 1946 2918 
+Q 1946 3194 1930 3446 
+Q 1914 3699 1866 3891 
+Q 1818 4083 1722 4195 
+Q 1626 4307 1466 4307 
+Q 1318 4307 1219 4204 
+Q 1120 4102 1059 3939 
+Q 998 3776 972 3571 
+Q 947 3366 947 3162 
+Q 947 2989 982 2806 
+Q 1018 2624 1088 2477 
+Q 1158 2330 1260 2234 
+Q 1363 2138 1498 2138 
+Q 1587 2138 1638 2157 
+L 1658 2022 
+z
+" transform="scale(0.015625)"/>
+        </defs>
+        <use xlink:href="#STSongti-SC-Black-30"/>
+        <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+        <use xlink:href="#STSongti-SC-Black-39" transform="translate(68.799988 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       </g>
+      </g>
+     </g>
+     <g id="ytick_5">
+      <g id="line2d_5">
+       <g>
+        <use xlink:href="#mbf9550c329" x="440.276813" y="59.301445" style="stroke: #000000; stroke-width: 0.8"/>
+       </g>
+      </g>
+      <g id="text_5">
+       <!-- 1.0000 -->
+       <g transform="translate(443.776813 62.541445) scale(0.09 -0.09)">
+        <defs>
+         <path id="STSongti-SC-Black-31" d="M 2464 365 
+Q 2298 371 2045 377 
+Q 1792 384 1523 384 
+Q 1254 384 1001 377 
+Q 749 371 582 365 
+L 582 550 
+L 979 608 
+Q 1203 659 1203 858 
+L 1203 3840 
+L 442 3347 
+L 333 3546 
+Q 442 3616 608 3718 
+Q 774 3821 960 3942 
+Q 1146 4064 1331 4192 
+Q 1517 4320 1670 4448 
+L 1882 4448 
+L 1882 858 
+Q 1882 634 2106 602 
+L 2464 550 
+L 2464 365 
+z
+" transform="scale(0.015625)"/>
+        </defs>
+        <use xlink:href="#STSongti-SC-Black-31"/>
+        <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(68.799988 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+        <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       </g>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 半径比 $R/R_0$ -->
+      <g transform="translate(478.416188 167.603) rotate(-90) scale(0.09 -0.09)">
+       <defs>
+        <path id="STSongti-SC-Black-534a" d="M 3571 3040 
+Q 4390 4032 4659 4922 
+Q 5709 4397 5709 4262 
+Q 5709 4205 5581 4173 
+Q 5363 4122 4979 3834 
+Q 3994 3098 3571 2861 
+L 3571 2758 
+L 4685 2758 
+Q 4768 2918 4864 3075 
+Q 4960 3232 4989 3245 
+Q 5018 3258 5043 3258 
+Q 5146 3258 5485 2986 
+Q 5824 2714 5824 2630 
+Q 5824 2547 5677 2547 
+L 3571 2547 
+L 3571 1478 
+L 5018 1478 
+Q 5254 1933 5308 1993 
+Q 5363 2054 5421 2054 
+Q 5542 2054 5888 1747 
+Q 6234 1440 6234 1353 
+Q 6234 1267 6074 1267 
+L 3571 1267 
+L 3571 403 
+Q 3571 224 3584 -6 
+L 3603 -384 
+Q 3603 -550 3382 -604 
+Q 3162 -659 2982 -659 
+Q 2803 -659 2764 -633 
+Q 2726 -608 2726 -531 
+L 2739 -269 
+Q 2746 0 2746 326 
+L 2746 1267 
+L 646 1267 
+Q 493 1267 371 1229 
+L 262 1504 
+Q 410 1478 582 1478 
+L 2746 1478 
+L 2746 2547 
+L 1043 2547 
+Q 890 2547 768 2509 
+L 659 2784 
+Q 806 2758 979 2758 
+L 2746 2758 
+L 2746 4646 
+Q 2746 5069 2726 5376 
+Q 3430 5331 3564 5296 
+Q 3699 5261 3699 5181 
+Q 3699 5101 3571 5050 
+L 3571 3040 
+z
+M 819 4608 
+Q 902 4608 1212 4525 
+Q 1523 4442 1740 4314 
+Q 1958 4186 2064 4019 
+Q 2170 3853 2170 3632 
+Q 2170 3411 2022 3244 
+Q 1875 3078 1680 3078 
+Q 1485 3078 1389 3190 
+Q 1293 3302 1312 3507 
+Q 1318 3578 1318 3648 
+Q 1318 4186 870 4506 
+Q 781 4563 781 4585 
+Q 781 4608 819 4608 
+z
+" transform="scale(0.015625)"/>
+        <path id="STSongti-SC-Black-5f84" d="M 1690 5254 
+Q 2496 4819 2496 4698 
+Q 2496 4634 2381 4634 
+Q 2310 4627 2208 4556 
+Q 2106 4486 1789 4217 
+Q 1472 3949 902 3625 
+Q 333 3302 250 3302 
+Q 230 3302 230 3321 
+Q 230 3341 294 3392 
+Q 717 3731 1085 4220 
+Q 1453 4710 1690 5254 
+z
+M 1882 2093 
+Q 2701 2528 3341 3187 
+Q 3981 3846 4262 4518 
+L 2925 4518 
+Q 2797 4518 2694 4448 
+L 2515 4749 
+Q 2669 4730 2835 4730 
+L 4262 4730 
+Q 4486 5062 4576 5062 
+Q 4666 5062 4922 4899 
+Q 5178 4736 5331 4630 
+Q 5485 4525 5485 4441 
+Q 5485 4358 5312 4358 
+Q 5216 4358 5129 4291 
+Q 5043 4224 4803 3939 
+Q 4563 3654 4314 3424 
+Q 5043 3322 5561 3091 
+Q 6080 2861 6080 2445 
+Q 6080 2234 5971 2102 
+Q 5862 1971 5690 1971 
+Q 5600 1971 5504 2038 
+Q 5408 2106 5376 2182 
+Q 5210 2579 4906 2899 
+Q 4602 3219 4243 3354 
+Q 3149 2362 1882 2016 
+L 1882 -442 
+Q 1882 -499 1850 -531 
+Q 1818 -563 1626 -620 
+Q 1434 -678 1306 -678 
+Q 1178 -678 1155 -668 
+Q 1133 -659 1133 -614 
+L 1152 -13 
+Q 1158 269 1158 518 
+L 1158 2240 
+Q 915 2067 630 1897 
+Q 346 1728 317 1728 
+Q 288 1728 288 1734 
+Q 288 1754 352 1818 
+Q 877 2355 1216 2857 
+Q 1555 3360 1843 4019 
+Q 2150 3878 2412 3699 
+Q 2675 3520 2675 3465 
+Q 2675 3411 2572 3404 
+Q 2470 3398 2400 3347 
+Q 2330 3296 2147 3101 
+Q 1965 2906 1741 2714 
+Q 2067 2669 2067 2585 
+Q 2067 2502 1882 2426 
+L 1882 2093 
+z
+M 3552 1722 
+L 2707 1722 
+Q 2579 1722 2477 1651 
+L 2272 1952 
+Q 2426 1933 2592 1933 
+L 4634 1933 
+Q 4691 2048 4787 2198 
+Q 4883 2349 4905 2368 
+Q 4928 2387 4960 2387 
+Q 5030 2387 5350 2131 
+Q 5670 1875 5670 1798 
+Q 5670 1722 5542 1722 
+L 4493 1722 
+Q 4467 1606 4346 1562 
+L 4346 -90 
+L 5018 -90 
+Q 5094 70 5200 233 
+Q 5306 397 5344 435 
+Q 5382 474 5421 474 
+Q 5523 474 5884 170 
+Q 6246 -134 6246 -217 
+Q 6246 -301 6118 -301 
+L 2419 -301 
+Q 2291 -301 2189 -371 
+L 1984 -70 
+Q 2138 -90 2304 -90 
+L 3552 -90 
+L 3552 1722 
+z
+" transform="scale(0.015625)"/>
+        <path id="STSongti-SC-Black-6bd4" d="M 3994 2586 
+Q 4390 2963 5050 4058 
+Q 5350 3866 5635 3619 
+Q 5920 3373 5920 3309 
+Q 5920 3245 5808 3245 
+Q 5696 3245 5619 3222 
+Q 5542 3200 5379 3120 
+Q 5216 3040 4826 2822 
+L 3994 2355 
+L 3994 531 
+Q 3994 371 4125 313 
+Q 4256 256 4666 256 
+Q 4954 256 5091 323 
+Q 5229 390 5344 614 
+Q 5459 838 5626 1376 
+Q 5651 1459 5683 1459 
+Q 5715 1459 5702 1370 
+Q 5645 1005 5645 793 
+Q 5645 582 5709 444 
+Q 5773 307 5926 201 
+Q 6080 96 6080 0 
+Q 6080 -122 5939 -266 
+Q 5798 -410 5548 -470 
+Q 5299 -531 4822 -531 
+Q 4346 -531 3952 -480 
+Q 3558 -429 3420 -352 
+Q 3283 -275 3244 -121 
+Q 3206 32 3206 390 
+L 3206 4429 
+Q 3206 4864 3187 5146 
+Q 3770 5088 3974 5046 
+Q 4179 5005 4179 4941 
+Q 4179 4877 3994 4819 
+L 3994 2586 
+z
+M 1555 2893 
+L 2138 2893 
+Q 2362 3245 2397 3283 
+Q 2432 3322 2489 3322 
+Q 2547 3322 2720 3178 
+Q 2893 3034 3011 2928 
+Q 3130 2822 3130 2752 
+Q 3130 2682 3034 2682 
+L 1555 2682 
+L 1555 634 
+L 2432 928 
+Q 3040 1133 3091 1133 
+Q 3110 1133 3110 1113 
+Q 3110 1094 3072 1069 
+Q 1664 128 1030 -454 
+Q 960 -525 928 -525 
+Q 902 -525 844 -413 
+Q 787 -301 636 32 
+Q 486 365 486 390 
+Q 486 435 544 461 
+Q 813 589 813 787 
+L 813 4358 
+Q 813 4685 794 4960 
+Q 1715 4902 1715 4768 
+Q 1715 4698 1555 4634 
+L 1555 2893 
+z
+" transform="scale(0.015625)"/>
+        <path id="STSongti-SC-Black-20" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-Oblique-52" d="M 1613 4147 
+L 1294 2491 
+L 2106 2491 
+Q 2584 2491 2879 2755 
+Q 3175 3019 3175 3444 
+Q 3175 3784 2976 3965 
+Q 2778 4147 2406 4147 
+L 1613 4147 
+z
+M 2772 2241 
+Q 2972 2194 3105 2009 
+Q 3238 1825 3413 1275 
+L 3809 0 
+L 3144 0 
+L 2778 1197 
+Q 2638 1659 2453 1815 
+Q 2269 1972 1888 1972 
+L 1191 1972 
+L 806 0 
+L 172 0 
+L 1081 4666 
+L 2503 4666 
+Q 3150 4666 3495 4373 
+Q 3841 4081 3841 3531 
+Q 3841 3044 3547 2687 
+Q 3253 2331 2772 2241 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-2f" d="M 1625 4666 
+L 2156 4666 
+L 531 -594 
+L 0 -594 
+L 1625 4666 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-30" d="M 2034 4250 
+Q 1547 4250 1301 3770 
+Q 1056 3291 1056 2328 
+Q 1056 1369 1301 889 
+Q 1547 409 2034 409 
+Q 2525 409 2770 889 
+Q 3016 1369 3016 2328 
+Q 3016 3291 2770 3770 
+Q 2525 4250 2034 4250 
+z
+M 2034 4750 
+Q 2819 4750 3233 4129 
+Q 3647 3509 3647 2328 
+Q 3647 1150 3233 529 
+Q 2819 -91 2034 -91 
+Q 1250 -91 836 529 
+Q 422 1150 422 2328 
+Q 422 3509 836 4129 
+Q 1250 4750 2034 4750 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#STSongti-SC-Black-534a"/>
+       <use xlink:href="#STSongti-SC-Black-5f84" transform="translate(99.999985 0)"/>
+       <use xlink:href="#STSongti-SC-Black-6bd4" transform="translate(199.999969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-20" transform="translate(299.999954 0)"/>
+       <use xlink:href="#DejaVuSans-Oblique-52" transform="translate(324.999939 0)"/>
+       <use xlink:href="#DejaVuSans-2f" transform="translate(394.482361 0)"/>
+       <use xlink:href="#DejaVuSans-Oblique-52" transform="translate(428.173767 0)"/>
+       <use xlink:href="#DejaVuSans-30" transform="translate(497.656189 -16.40625) scale(0.7)"/>
+      </g>
+     </g>
+    </g>
+    <g id="patch_4">
+     <path d="M 440.276813 243.2012 
+L 440.276813 42.9548 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_1">
+     <g id="line2d_6">
+      <path d="M 46.292813 243.2012 
+L 46.292813 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_7">
+      <defs>
+       <path id="md734e2f114" d="M 0 0 
+L 0 -3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md734e2f114" x="46.292813" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 0.0000 -->
+      <g transform="translate(34.753125 253.1812) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-30"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_8">
+      <path d="M 101.012812 243.2012 
+L 101.012812 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#md734e2f114" x="101.012812" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 10.0000 -->
+      <g transform="translate(87.362344 253.1812) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-31"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_10">
+      <path d="M 155.732812 243.2012 
+L 155.732812 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#md734e2f114" x="155.732812" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 20.0000 -->
+      <g transform="translate(142.082344 253.1812) scale(0.09 -0.09)">
+       <defs>
+        <path id="STSongti-SC-Black-32" d="M 2726 365 
+Q 2496 371 2227 377 
+Q 1958 384 1542 384 
+Q 1120 384 777 381 
+Q 435 378 211 365 
+Q 230 518 262 659 
+Q 294 800 377 957 
+Q 461 1114 605 1299 
+Q 749 1485 992 1734 
+L 1229 1978 
+Q 1478 2227 1625 2412 
+Q 1773 2598 1849 2748 
+Q 1926 2899 1945 3033 
+Q 1965 3168 1965 3322 
+Q 1965 3622 1779 3801 
+Q 1594 3981 1280 3981 
+Q 954 3981 746 3769 
+Q 538 3558 461 3162 
+L 262 3238 
+Q 352 3827 694 4137 
+Q 1037 4448 1549 4448 
+Q 1779 4448 1984 4384 
+Q 2189 4320 2342 4195 
+Q 2496 4070 2589 3888 
+Q 2682 3706 2682 3469 
+Q 2682 3219 2592 3008 
+Q 2502 2797 2348 2608 
+Q 2195 2419 1993 2246 
+Q 1792 2074 1574 1907 
+L 1382 1754 
+Q 1216 1619 1030 1427 
+Q 845 1235 685 979 
+L 2074 979 
+Q 2234 979 2317 1011 
+Q 2400 1043 2448 1116 
+Q 2496 1190 2531 1302 
+Q 2566 1414 2624 1568 
+L 2822 1568 
+L 2726 365 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#STSongti-SC-Black-32"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_12">
+      <path d="M 210.452812 243.2012 
+L 210.452812 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#md734e2f114" x="210.452812" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 30.0000 -->
+      <g transform="translate(196.802344 253.1812) scale(0.09 -0.09)">
+       <defs>
+        <path id="STSongti-SC-Black-33" d="M 576 3430 
+L 474 3526 
+Q 550 3731 646 3900 
+Q 742 4070 876 4192 
+Q 1011 4314 1193 4381 
+Q 1376 4448 1619 4448 
+Q 1779 4448 1939 4409 
+Q 2099 4371 2224 4288 
+Q 2349 4205 2425 4083 
+Q 2502 3962 2502 3789 
+Q 2502 3539 2281 3289 
+Q 2061 3040 1683 2822 
+Q 1939 2842 2153 2771 
+Q 2368 2701 2518 2560 
+Q 2669 2419 2752 2214 
+Q 2835 2010 2835 1760 
+Q 2835 1446 2707 1174 
+Q 2579 902 2355 704 
+Q 2131 506 1833 394 
+Q 1536 282 1203 282 
+Q 762 282 518 403 
+Q 275 525 275 717 
+Q 275 787 323 854 
+Q 371 922 457 950 
+Q 544 979 653 950 
+Q 762 922 890 800 
+Q 986 704 1053 640 
+Q 1120 576 1174 541 
+Q 1229 506 1277 490 
+Q 1325 474 1389 474 
+Q 1581 474 1725 570 
+Q 1869 666 1965 826 
+Q 2061 986 2105 1184 
+Q 2150 1382 2150 1587 
+Q 2150 1997 1955 2198 
+Q 1760 2400 1498 2400 
+Q 1331 2400 1206 2345 
+Q 1082 2291 954 2182 
+L 845 2330 
+Q 909 2387 979 2444 
+Q 1050 2502 1126 2560 
+Q 1478 2822 1676 3030 
+Q 1875 3238 1875 3437 
+Q 1875 3686 1731 3824 
+Q 1587 3962 1306 3962 
+Q 1101 3962 902 3843 
+Q 704 3725 576 3430 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#STSongti-SC-Black-33"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_14">
+      <path d="M 265.172813 243.2012 
+L 265.172813 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#md734e2f114" x="265.172813" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 40.0000 -->
+      <g transform="translate(251.522344 253.1812) scale(0.09 -0.09)">
+       <defs>
+        <path id="STSongti-SC-Black-34" d="M 2086 4448 
+L 2387 4448 
+L 2387 1843 
+L 2918 1843 
+L 2918 1434 
+L 2387 1434 
+L 2387 282 
+L 1670 282 
+L 1670 1434 
+L 122 1434 
+L 122 1760 
+L 966 2912 
+Q 1254 3296 1529 3680 
+Q 1805 4064 2086 4448 
+z
+M 1670 1843 
+L 1670 3469 
+Q 1453 3168 1289 2944 
+Q 1126 2720 992 2537 
+Q 858 2355 739 2188 
+Q 621 2022 493 1843 
+L 1670 1843 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#STSongti-SC-Black-34"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_16">
+      <path d="M 319.892812 243.2012 
+L 319.892812 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#md734e2f114" x="319.892812" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- 50.0000 -->
+      <g transform="translate(306.242344 253.1812) scale(0.09 -0.09)">
+       <defs>
+        <path id="STSongti-SC-Black-35" d="M 2490 3763 
+L 1536 3763 
+Q 1286 3763 1094 3760 
+Q 902 3757 877 3744 
+L 819 2880 
+Q 960 2950 1145 2982 
+Q 1331 3014 1478 3014 
+Q 1805 3014 2051 2908 
+Q 2298 2803 2464 2627 
+Q 2630 2451 2713 2220 
+Q 2797 1990 2797 1741 
+Q 2797 1414 2662 1145 
+Q 2528 877 2310 685 
+Q 2093 493 1817 387 
+Q 1542 282 1254 282 
+Q 1107 282 934 310 
+Q 762 339 611 393 
+Q 461 448 361 528 
+Q 262 608 262 717 
+Q 262 794 313 854 
+Q 365 915 435 950 
+Q 506 986 582 986 
+Q 659 986 710 941 
+Q 864 813 963 723 
+Q 1062 634 1139 576 
+Q 1216 518 1286 492 
+Q 1357 467 1453 467 
+Q 1632 467 1766 550 
+Q 1901 634 1993 778 
+Q 2086 922 2134 1114 
+Q 2182 1306 2182 1523 
+Q 2182 1728 2118 1897 
+Q 2054 2067 1939 2192 
+Q 1824 2317 1667 2387 
+Q 1510 2458 1318 2458 
+Q 1101 2458 957 2410 
+Q 813 2362 723 2272 
+L 614 2272 
+L 736 4384 
+L 1542 4384 
+Q 1792 4384 1952 4384 
+Q 2112 4384 2205 4400 
+Q 2298 4416 2336 4451 
+Q 2374 4486 2387 4557 
+L 2547 4557 
+L 2490 3763 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#STSongti-SC-Black-35"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_18">
+      <path d="M 374.612813 243.2012 
+L 374.612813 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#md734e2f114" x="374.612813" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- 60.0000 -->
+      <g transform="translate(360.962344 253.1812) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-36"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_20">
+      <path d="M 429.332812 243.2012 
+L 429.332812 42.9548 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#md734e2f114" x="429.332812" y="243.2012" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- 70.0000 -->
+      <g transform="translate(415.682344 253.1812) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-37"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(93.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(256.399963 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_15">
+     <!-- 时间 / h -->
+     <g transform="translate(227.395594 265.586356) scale(0.09 -0.09)">
+      <defs>
+       <path id="STSongti-SC-Black-65f6" d="M 2592 3526 
+Q 2714 3514 2867 3514 
+L 4339 3514 
+L 4339 4666 
+Q 4339 4986 4326 5235 
+Q 5037 5178 5158 5139 
+Q 5280 5101 5280 5033 
+Q 5280 4966 5114 4915 
+L 5114 3514 
+L 5158 3514 
+Q 5299 3808 5356 3897 
+Q 5414 3987 5475 3987 
+Q 5536 3987 5849 3718 
+Q 6163 3450 6163 3376 
+Q 6163 3302 6042 3302 
+L 5114 3302 
+L 5114 147 
+Q 5114 -141 5088 -278 
+Q 5062 -416 4969 -499 
+Q 4877 -582 4614 -652 
+Q 4352 -723 4224 -723 
+Q 4070 -723 4051 -563 
+Q 4032 -403 3990 -300 
+Q 3949 -198 3814 -118 
+Q 3680 -38 3418 -6 
+Q 3328 0 3328 41 
+Q 3328 83 3424 83 
+L 3814 70 
+Q 4058 70 4170 99 
+Q 4282 128 4310 185 
+Q 4339 243 4339 352 
+L 4339 3302 
+L 2944 3302 
+Q 2816 3302 2714 3232 
+L 2592 3450 
+L 2592 1152 
+Q 2592 851 2598 736 
+L 2605 525 
+Q 2605 448 2566 397 
+Q 2528 346 2358 294 
+Q 2189 243 1971 243 
+Q 1926 243 1888 291 
+Q 1850 339 1850 410 
+L 1850 749 
+L 1133 749 
+L 1133 256 
+Q 1133 192 1094 144 
+Q 1056 96 899 45 
+Q 742 -6 602 -6 
+Q 378 -6 378 109 
+L 390 410 
+Q 403 723 403 979 
+L 403 4045 
+Q 403 4435 390 4710 
+Q 813 4563 1107 4422 
+L 1747 4422 
+Q 1907 4691 1952 4752 
+Q 1997 4813 2045 4813 
+Q 2093 4813 2345 4656 
+Q 2598 4499 2707 4409 
+Q 2816 4320 2816 4259 
+Q 2816 4198 2592 4096 
+L 2592 3526 
+z
+M 1133 2720 
+L 1850 2720 
+L 1850 4211 
+L 1248 4211 
+Q 1235 4128 1133 4096 
+L 1133 2720 
+z
+M 1850 2509 
+L 1133 2509 
+L 1133 960 
+L 1850 960 
+L 1850 2509 
+z
+M 2970 2861 
+Q 3142 2861 3376 2771 
+Q 3610 2682 3770 2554 
+Q 3930 2426 4003 2298 
+Q 4077 2170 4077 1981 
+Q 4077 1792 3939 1638 
+Q 3802 1485 3603 1485 
+Q 3405 1485 3312 1609 
+Q 3219 1734 3238 1900 
+Q 3258 2067 3258 2163 
+Q 3258 2522 2989 2758 
+Q 2925 2816 2925 2838 
+Q 2925 2861 2970 2861 
+z
+" transform="scale(0.015625)"/>
+       <path id="STSongti-SC-Black-95f4" d="M 1427 5254 
+Q 1907 5254 2294 5052 
+Q 2682 4851 2682 4512 
+Q 2682 4307 2541 4156 
+Q 2400 4006 2202 4006 
+Q 2074 4006 1987 4054 
+Q 1901 4102 1869 4176 
+Q 1837 4250 1837 4397 
+Q 1837 4864 1427 5171 
+Q 1363 5222 1363 5238 
+Q 1363 5254 1427 5254 
+z
+M 4781 4698 
+Q 4934 4992 4988 5069 
+Q 5043 5146 5088 5146 
+Q 5197 5146 5606 4893 
+Q 6016 4640 6016 4525 
+Q 6016 4442 5766 4352 
+L 5766 186 
+Q 5766 -179 5664 -332 
+Q 5562 -486 5296 -560 
+Q 5030 -634 4870 -634 
+Q 4710 -634 4698 -538 
+Q 4678 -256 4502 -115 
+Q 4326 26 3968 109 
+Q 3840 141 3840 160 
+Q 3840 179 4122 179 
+Q 4557 179 4761 230 
+Q 4966 282 4966 454 
+L 4966 4486 
+L 3290 4486 
+Q 3162 4486 3059 4416 
+L 2893 4717 
+Q 3046 4698 3213 4698 
+L 4781 4698 
+z
+M 614 4544 
+Q 915 4499 1155 4428 
+Q 1395 4358 1462 4320 
+Q 1530 4282 1530 4237 
+Q 1530 4154 1338 4077 
+L 1338 -378 
+Q 1338 -454 1293 -476 
+Q 1248 -499 1117 -544 
+Q 986 -589 710 -589 
+Q 614 -589 614 -499 
+L 621 -243 
+Q 627 -90 627 301 
+L 627 3974 
+Q 627 4294 614 4544 
+z
+M 2650 3539 
+L 3443 3539 
+Q 3584 3770 3648 3846 
+Q 3712 3923 3750 3923 
+Q 3827 3923 4192 3699 
+Q 4557 3475 4557 3388 
+Q 4557 3302 4333 3226 
+L 4333 1478 
+L 4346 890 
+Q 4346 838 4330 812 
+Q 4314 787 4230 745 
+Q 4147 704 4000 675 
+Q 3853 646 3715 646 
+Q 3578 646 3578 781 
+L 3578 986 
+L 2611 986 
+L 2611 813 
+Q 2611 717 2441 653 
+Q 2272 589 2077 589 
+Q 1882 589 1888 691 
+Q 1914 979 1914 1261 
+L 1914 3251 
+Q 1914 3533 1894 3808 
+Q 2330 3693 2650 3539 
+z
+M 2611 2426 
+L 3578 2426 
+L 3578 3328 
+L 2714 3328 
+Q 2688 3277 2611 3251 
+L 2611 2426 
+z
+M 3578 2214 
+L 2611 2214 
+L 2611 1197 
+L 3578 1197 
+L 3578 2214 
+z
+" transform="scale(0.015625)"/>
+       <path id="STSongti-SC-Black-2f" d="M 2432 4838 
+L 2963 4838 
+L 762 -480 
+L 237 -480 
+L 2432 4838 
+z
+" transform="scale(0.015625)"/>
+       <path id="STSongti-SC-Black-68" d="M 493 3859 
+Q 493 4045 374 4125 
+Q 256 4205 96 4237 
+L 96 4378 
+Q 160 4378 285 4397 
+Q 410 4416 554 4445 
+Q 698 4474 838 4515 
+Q 979 4557 1075 4608 
+L 1229 4608 
+L 1229 2394 
+Q 1395 2630 1577 2761 
+Q 1760 2893 2003 2925 
+Q 2054 2931 2102 2934 
+Q 2150 2938 2208 2938 
+Q 2566 2938 2764 2717 
+Q 2963 2496 2963 2067 
+L 2963 813 
+Q 2963 749 2988 688 
+Q 3014 627 3123 589 
+L 3302 525 
+L 3302 358 
+Q 3098 371 2909 377 
+Q 2720 384 2605 384 
+Q 2496 384 2285 377 
+Q 2074 371 1875 358 
+L 1875 525 
+L 2074 595 
+Q 2163 627 2195 688 
+Q 2227 749 2227 858 
+L 2227 1990 
+Q 2227 2202 2147 2323 
+Q 2067 2445 1830 2445 
+Q 1715 2445 1616 2397 
+Q 1517 2349 1440 2281 
+Q 1363 2214 1308 2134 
+Q 1254 2054 1229 1997 
+L 1229 858 
+Q 1229 787 1254 726 
+Q 1280 666 1350 634 
+L 1626 525 
+L 1626 358 
+Q 1523 371 1305 377 
+Q 1088 384 864 384 
+Q 640 384 451 377 
+Q 262 371 160 358 
+L 160 525 
+L 358 595 
+Q 435 627 464 697 
+Q 493 768 493 845 
+L 493 3859 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#STSongti-SC-Black-65f6"/>
+      <use xlink:href="#STSongti-SC-Black-95f4" transform="translate(99.999985 0)"/>
+      <use xlink:href="#STSongti-SC-Black-20" transform="translate(199.999969 0)"/>
+      <use xlink:href="#STSongti-SC-Black-2f" transform="translate(224.999954 0)"/>
+      <use xlink:href="#STSongti-SC-Black-20" transform="translate(274.999939 0)"/>
+      <use xlink:href="#STSongti-SC-Black-68" transform="translate(299.999924 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_6">
+     <g id="line2d_22">
+      <path d="M 46.292813 222.767894 
+L 440.276813 222.767894 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_23">
+      <defs>
+       <path id="m16cbdd3a65" d="M 0 0 
+L 3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m16cbdd3a65" x="46.292813" y="222.767894" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <!-- 1.2000 -->
+      <g transform="translate(19.713438 226.007894) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-31"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-32" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_24">
+      <path d="M 46.292813 181.901282 
+L 440.276813 181.901282 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m16cbdd3a65" x="46.292813" y="181.901282" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <!-- 1.4000 -->
+      <g transform="translate(19.713438 185.141282) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-31"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-34" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_26">
+      <path d="M 46.292813 141.034669 
+L 440.276813 141.034669 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m16cbdd3a65" x="46.292813" y="141.034669" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <!-- 1.6000 -->
+      <g transform="translate(19.713438 144.274669) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-31"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-36" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_28">
+      <path d="M 46.292813 100.168057 
+L 440.276813 100.168057 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#m16cbdd3a65" x="46.292813" y="100.168057" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <!-- 1.8000 -->
+      <g transform="translate(19.713438 103.408057) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-31"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-38" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_30">
+      <path d="M 46.292813 59.301445 
+L 440.276813 59.301445 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke-dasharray: 2.22,0.96; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.6"/>
+     </g>
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#m16cbdd3a65" x="46.292813" y="59.301445" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <!-- 2.0000 -->
+      <g transform="translate(19.713438 62.541445) scale(0.09 -0.09)">
+       <use xlink:href="#STSongti-SC-Black-32"/>
+       <use xlink:href="#STSongti-SC-Black-2e" transform="translate(46.899994 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(68.799988 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(115.699982 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(162.599976 0)"/>
+       <use xlink:href="#STSongti-SC-Black-30" transform="translate(209.499969 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_21">
+     <!-- 半径 / cm -->
+     <g transform="translate(14.461875 161.901359) rotate(-90) scale(0.09 -0.09)">
+      <defs>
+       <path id="STSongti-SC-Black-63" d="M 2464 986 
+Q 2394 870 2301 745 
+Q 2208 621 2077 518 
+Q 1946 416 1773 349 
+Q 1600 282 1382 282 
+Q 819 282 489 624 
+Q 160 966 160 1562 
+Q 160 1869 269 2121 
+Q 378 2374 570 2556 
+Q 762 2739 1021 2838 
+Q 1280 2938 1587 2938 
+Q 1933 2938 2157 2829 
+Q 2381 2720 2381 2515 
+Q 2381 2387 2313 2316 
+Q 2246 2246 2144 2246 
+Q 2048 2246 1958 2313 
+Q 1869 2381 1773 2457 
+Q 1677 2534 1577 2601 
+Q 1478 2669 1376 2669 
+Q 1235 2669 1139 2582 
+Q 1043 2496 982 2361 
+Q 922 2227 896 2064 
+Q 870 1901 870 1747 
+Q 870 1523 928 1360 
+Q 986 1197 1088 1088 
+Q 1190 979 1324 918 
+Q 1459 858 1606 838 
+Q 1837 800 2045 880 
+Q 2253 960 2419 1107 
+L 2464 986 
+z
+" transform="scale(0.015625)"/>
+       <path id="STSongti-SC-Black-6d" d="M 3379 531 
+L 3565 570 
+Q 3718 602 3769 650 
+Q 3821 698 3821 838 
+L 3821 1920 
+Q 3821 2022 3808 2128 
+Q 3795 2234 3756 2320 
+Q 3718 2406 3644 2457 
+Q 3571 2509 3443 2509 
+Q 3283 2509 3136 2371 
+Q 2989 2234 2893 2054 
+L 2893 890 
+Q 2893 755 2918 684 
+Q 2944 614 3059 589 
+L 3258 525 
+L 3258 358 
+Q 2931 384 2553 384 
+Q 2176 384 1824 358 
+L 1824 525 
+L 1952 563 
+Q 2061 595 2109 662 
+Q 2157 730 2157 858 
+L 2157 1914 
+Q 2157 2016 2137 2125 
+Q 2118 2234 2076 2317 
+Q 2035 2400 1961 2454 
+Q 1888 2509 1773 2509 
+Q 1664 2509 1577 2467 
+Q 1491 2426 1424 2358 
+Q 1357 2291 1309 2211 
+Q 1261 2131 1229 2061 
+L 1229 883 
+Q 1229 723 1270 665 
+Q 1312 608 1402 589 
+L 1664 525 
+L 1664 358 
+Q 1504 371 1302 377 
+Q 1101 384 889 384 
+Q 678 384 473 377 
+Q 269 371 96 358 
+L 96 525 
+L 256 563 
+Q 397 595 445 652 
+Q 493 710 493 845 
+L 493 2163 
+Q 493 2240 486 2294 
+Q 480 2349 448 2384 
+Q 416 2419 352 2438 
+Q 288 2458 173 2477 
+L 173 2579 
+Q 256 2598 384 2640 
+Q 512 2682 649 2739 
+Q 787 2797 912 2877 
+Q 1037 2957 1107 3053 
+L 1229 3053 
+L 1229 2438 
+Q 1491 2694 1670 2812 
+Q 1850 2931 2074 2938 
+Q 2394 2944 2589 2829 
+Q 2784 2714 2874 2394 
+Q 2976 2509 3065 2611 
+Q 3155 2714 3254 2784 
+Q 3354 2854 3475 2896 
+Q 3597 2938 3763 2938 
+Q 3955 2938 4105 2899 
+Q 4256 2861 4355 2758 
+Q 4454 2656 4505 2486 
+Q 4557 2317 4557 2061 
+L 4557 832 
+Q 4557 595 4659 576 
+L 4883 525 
+L 4883 358 
+Q 4723 371 4515 377 
+Q 4307 384 4096 384 
+Q 3885 384 3696 377 
+Q 3507 371 3379 365 
+L 3379 531 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#STSongti-SC-Black-534a"/>
+      <use xlink:href="#STSongti-SC-Black-5f84" transform="translate(99.999985 0)"/>
+      <use xlink:href="#STSongti-SC-Black-20" transform="translate(199.999969 0)"/>
+      <use xlink:href="#STSongti-SC-Black-2f" transform="translate(224.999954 0)"/>
+      <use xlink:href="#STSongti-SC-Black-20" transform="translate(274.999939 0)"/>
+      <use xlink:href="#STSongti-SC-Black-63" transform="translate(299.999924 0)"/>
+      <use xlink:href="#STSongti-SC-Black-6d" transform="translate(340.499908 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_32">
+    <defs>
+     <path id="m28aab2f459" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #1f4e79; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pdbbf42828e)">
+     <use xlink:href="#m28aab2f459" x="46.292813" y="59.301445" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="49.028813" y="85.251744" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="51.764813" y="101.394056" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="54.500813" y="119.988364" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="57.236812" y="135.926343" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="59.972813" y="143.282333" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="62.708813" y="150.842656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="65.444812" y="159.424645" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="68.180813" y="166.167636" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="70.916813" y="172.297628" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="73.652813" y="176.997288" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="76.388813" y="182.514281" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="79.124812" y="187.213941" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="81.860813" y="190.891936" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="84.596812" y="194.774264" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="87.332813" y="198.043593" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="90.068813" y="200.086924" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="92.804812" y="202.538921" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="95.540813" y="204.173585" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="98.276813" y="206.216916" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="101.012812" y="207.85158" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="103.748812" y="209.281912" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="106.484813" y="210.50791" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="109.220812" y="211.938242" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="111.956812" y="212.959907" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="114.692813" y="213.777239" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="117.428812" y="214.594571" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="120.164813" y="215.411904" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="122.900813" y="216.024903" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="125.636812" y="216.842235" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="128.372813" y="217.455234" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="131.108812" y="218.068233" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="133.844812" y="218.4769" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="136.580813" y="218.885566" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="139.316812" y="219.089899" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="142.052812" y="219.498565" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="144.788813" y="219.907231" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="147.524812" y="220.111564" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="150.260812" y="220.315897" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="152.996813" y="220.52023" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="155.732812" y="220.724563" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="158.468812" y="220.928896" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="161.204813" y="221.133229" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="163.940812" y="221.337562" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="166.676812" y="221.541896" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="169.412813" y="221.541896" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="172.148812" y="221.746229" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="174.884812" y="221.746229" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="177.620812" y="221.950562" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="180.356812" y="221.950562" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="183.092812" y="222.154895" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="185.828812" y="222.154895" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="188.564812" y="222.154895" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="191.300812" y="222.154895" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="194.036812" y="222.359228" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="196.772812" y="222.359228" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="199.508812" y="222.359228" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="202.244812" y="222.359228" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="204.980812" y="222.359228" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="207.716812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="210.452812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="213.188812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="215.924812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="218.660812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="221.396812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="224.132812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="226.868812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="229.604812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="232.340812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="235.076812" y="222.563561" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="237.812812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="240.548812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="243.284812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="246.020812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="248.756812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="251.492812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="254.228812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="256.964812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="259.700812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="262.436812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="265.172813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="267.908813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="270.644813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="273.380812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="276.116812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="278.852812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="281.588813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="284.324813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="287.060812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="289.796812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="292.532812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="295.268812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="298.004813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="300.740813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="303.476812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="306.212812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="308.948812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="311.684813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="314.420813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="317.156813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="319.892812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="322.628812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="325.364813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="328.100813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="330.836813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="333.572812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="336.308812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="339.044812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="341.780813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="344.516813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="347.252813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="349.988812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="352.724812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="355.460812" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="358.196813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="360.932813" y="222.767894" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="363.668813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="366.404812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="369.140812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="371.876812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="374.612813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="377.348813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="380.084812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="382.820812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="385.556812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="388.292812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="391.028813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="393.764813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="396.500812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="399.236812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="401.972812" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="404.708813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="407.444813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="410.180813" y="222.972227" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="412.916812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="415.652812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="418.388812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="421.124813" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="423.860813" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="426.596812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="429.332812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="432.068812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="434.804812" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="437.540813" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+     <use xlink:href="#m28aab2f459" x="440.276813" y="223.17656" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="line2d_33">
+    <path d="M 46.292813 59.301445 
+L 47.607188 73.129116 
+L 48.592969 81.903288 
+L 49.578751 88.942227 
+L 51.22172 98.163312 
+L 52.207501 104.284823 
+L 56.150627 130.563146 
+L 57.136409 135.54301 
+L 58.12219 138.700863 
+L 62.722504 150.882937 
+L 66.66563 162.579537 
+L 69.951568 170.278161 
+L 71.265943 172.952275 
+L 74.880476 179.461603 
+L 76.852039 183.367542 
+L 78.823601 186.750571 
+L 80.137977 188.63321 
+L 83.095321 192.6666 
+L 85.066884 195.387435 
+L 86.709853 197.412883 
+L 87.695635 198.358773 
+L 89.667198 199.775805 
+L 90.981573 200.908286 
+L 92.624542 202.404653 
+L 93.938918 203.244692 
+L 95.910481 204.430303 
+L 99.525013 206.999508 
+L 102.810951 208.815269 
+L 105.439702 210.034342 
+L 107.411265 210.994024 
+L 109.711421 212.145003 
+L 112.340172 213.083837 
+L 120.226424 215.427548 
+L 132.384395 218.26962 
+L 138.299084 219.009818 
+L 140.599241 219.263428 
+L 145.528149 219.972249 
+L 167.872529 221.541896 
+L 170.829873 221.649556 
+L 172.472843 221.746229 
+L 176.087375 221.829952 
+L 178.058938 221.950562 
+L 181.67347 222.046979 
+L 183.645033 222.154895 
+L 192.517066 222.240132 
+L 194.488629 222.359228 
+L 206.318007 222.457944 
+L 207.960976 222.563561 
+L 236.220045 222.640774 
+L 238.191608 222.767894 
+L 362.071481 222.84461 
+L 364.043044 222.972227 
+L 411.360556 223.053437 
+L 413.332119 223.17656 
+L 440.276813 223.17656 
+L 440.276813 223.17656 
+" clip-path="url(#pdbbf42828e)" style="fill: none; stroke: #b63d3d; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 46.292813 243.2012 
+L 46.292813 42.9548 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 440.276813 243.2012 
+L 440.276813 42.9548 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 46.292813 243.2012 
+L 440.276813 243.2012 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 46.292813 42.9548 
+L 440.276813 42.9548 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_22">
+   <!-- 附件2半径实测点与PCHIP插值及半径比 -->
+   <g transform="translate(156.038719 289.285175) scale(0.1 -0.1)">
+    <defs>
+     <path id="STSongti-SC-Black-9644" d="M 2246 2566 
+Q 2918 3667 3117 5261 
+Q 3462 5190 3740 5097 
+Q 4019 5005 4064 4973 
+Q 4109 4941 4109 4886 
+Q 4109 4832 3987 4800 
+Q 3910 4781 3757 4461 
+Q 3546 4013 3296 3597 
+Q 3571 3552 3571 3456 
+Q 3571 3386 3411 3315 
+L 3411 -371 
+Q 3411 -429 3388 -454 
+Q 3366 -480 3203 -544 
+Q 3040 -608 2810 -608 
+Q 2739 -608 2739 -544 
+L 2758 58 
+Q 2765 339 2765 589 
+L 2765 2848 
+Q 2528 2579 2349 2406 
+Q 2496 2138 2496 1696 
+Q 2496 1254 2214 1043 
+Q 1933 832 1715 832 
+Q 1581 832 1574 954 
+Q 1555 1286 1190 1408 
+L 1190 -307 
+Q 1190 -378 1158 -406 
+Q 1126 -435 963 -489 
+Q 800 -544 570 -544 
+Q 499 -544 499 -474 
+L 512 -224 
+Q 518 64 518 384 
+L 518 4410 
+Q 518 4845 499 5094 
+Q 858 5005 1254 4819 
+L 1760 4819 
+Q 1894 5120 1990 5120 
+Q 2061 5120 2425 4870 
+Q 2790 4621 2790 4541 
+Q 2790 4461 2662 4432 
+Q 2534 4403 2460 4339 
+Q 2387 4275 2172 3955 
+Q 1958 3635 1594 3008 
+Q 2048 2822 2246 2566 
+z
+M 1190 1491 
+Q 1920 1434 1920 2003 
+Q 1920 2432 1382 2963 
+Q 1805 4550 1792 4608 
+L 1306 4608 
+Q 1267 4550 1190 4531 
+L 1190 1491 
+z
+M 5466 3494 
+L 5485 3494 
+Q 5549 3654 5622 3782 
+Q 5696 3910 5734 3910 
+Q 5792 3910 5993 3664 
+Q 6195 3418 6195 3350 
+Q 6195 3283 6093 3283 
+L 5466 3283 
+L 5466 122 
+Q 5466 -243 5373 -390 
+Q 5280 -538 5040 -605 
+Q 4800 -672 4633 -672 
+Q 4467 -672 4448 -493 
+Q 4435 -288 4310 -185 
+Q 4186 -83 4003 -38 
+Q 3821 6 3821 32 
+Q 3821 58 3904 58 
+L 4154 51 
+Q 4454 51 4604 102 
+Q 4755 154 4755 326 
+L 4755 3283 
+L 4026 3283 
+Q 3898 3283 3795 3213 
+L 3629 3514 
+Q 3782 3494 3949 3494 
+L 4755 3494 
+L 4755 4608 
+Q 4755 4928 4742 5178 
+Q 5248 5152 5443 5101 
+Q 5638 5050 5638 4960 
+Q 5638 4858 5466 4826 
+L 5466 3494 
+z
+M 3635 2752 
+Q 3744 2752 4041 2646 
+Q 4339 2541 4480 2365 
+Q 4621 2189 4621 1971 
+Q 4621 1754 4496 1626 
+Q 4371 1498 4211 1498 
+Q 4051 1498 3980 1603 
+Q 3910 1709 3920 1843 
+Q 3930 1978 3930 2099 
+Q 3930 2221 3872 2355 
+Q 3814 2490 3702 2598 
+Q 3590 2707 3590 2729 
+Q 3590 2752 3635 2752 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-4ef6" d="M 1178 2752 
+Q 928 2438 637 2160 
+Q 346 1882 310 1859 
+Q 275 1837 252 1837 
+Q 230 1837 230 1862 
+Q 230 1888 269 1939 
+Q 1152 3142 1485 5248 
+Q 1875 5165 2118 5085 
+Q 2362 5005 2445 4957 
+Q 2528 4909 2528 4857 
+Q 2528 4806 2419 4774 
+Q 2368 4762 2317 4682 
+Q 2266 4602 2077 4211 
+Q 1888 3821 1658 3443 
+Q 1920 3366 1984 3328 
+Q 2048 3290 2048 3245 
+Q 2048 3200 1914 3130 
+L 1914 -410 
+Q 1914 -461 1894 -486 
+Q 1875 -512 1750 -560 
+Q 1626 -608 1453 -640 
+Q 1280 -672 1197 -672 
+Q 1152 -672 1152 -608 
+L 1171 -6 
+Q 1178 275 1178 525 
+L 1178 2752 
+z
+M 3142 3494 
+L 3802 3494 
+L 3802 4621 
+Q 3802 4941 3789 5190 
+Q 4723 5101 4723 4947 
+Q 4723 4883 4576 4813 
+L 4576 3494 
+L 4986 3494 
+Q 5107 3718 5190 3840 
+Q 5274 3962 5312 3962 
+Q 5376 3962 5696 3709 
+Q 6016 3456 6016 3369 
+Q 6016 3283 5869 3283 
+L 4576 3283 
+L 4576 1958 
+L 5146 1958 
+Q 5350 2285 5420 2374 
+Q 5491 2464 5530 2464 
+Q 5606 2464 5942 2166 
+Q 6278 1869 6278 1808 
+Q 6278 1747 6163 1747 
+L 4576 1747 
+L 4576 205 
+Q 4576 -6 4589 -243 
+L 4595 -461 
+Q 4595 -506 4579 -525 
+Q 4563 -544 4438 -595 
+Q 4314 -646 4112 -691 
+Q 3910 -736 3827 -736 
+Q 3782 -736 3782 -640 
+L 3795 -390 
+Q 3802 -134 3802 186 
+L 3802 1747 
+L 2541 1747 
+Q 2413 1747 2310 1677 
+L 2144 1978 
+Q 2298 1958 2464 1958 
+L 3802 1958 
+L 3802 3283 
+L 3027 3283 
+Q 2778 2861 2454 2544 
+Q 2131 2227 2093 2227 
+Q 2080 2227 2080 2246 
+Q 2080 2266 2112 2330 
+Q 2611 3411 2726 4640 
+Q 3347 4506 3500 4442 
+Q 3654 4378 3654 4333 
+Q 3654 4288 3539 4230 
+Q 3494 4211 3395 3996 
+Q 3296 3782 3142 3494 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-5b9e" d="M 2970 4326 
+Q 2797 4429 2797 4659 
+Q 2797 5043 2432 5184 
+Q 2362 5210 2362 5235 
+Q 2362 5286 2829 5286 
+Q 3277 5286 3497 5145 
+Q 3718 5005 3718 4755 
+Q 3718 4454 3366 4326 
+L 4806 4326 
+Q 5005 4659 5043 4700 
+Q 5082 4742 5126 4742 
+Q 5216 4742 5539 4528 
+Q 5862 4314 6032 4173 
+Q 6202 4032 6202 3939 
+Q 6202 3846 6144 3811 
+Q 6086 3776 5971 3792 
+Q 5856 3808 5734 3808 
+Q 5453 3808 5235 3686 
+Q 5018 3565 4794 3283 
+Q 4755 3238 4736 3238 
+Q 4717 3238 4717 3264 
+Q 4717 3290 4730 3328 
+Q 4832 3667 4928 4115 
+L 1446 4115 
+Q 1472 4006 1472 3904 
+Q 1472 3590 1286 3392 
+Q 1101 3194 873 3194 
+Q 646 3194 521 3315 
+Q 397 3437 397 3590 
+Q 397 3789 589 3891 
+Q 1037 4128 1037 4525 
+Q 1037 4627 1021 4691 
+Q 1005 4755 1005 4777 
+Q 1005 4800 1024 4800 
+Q 1062 4800 1190 4643 
+Q 1318 4486 1382 4326 
+L 2970 4326 
+z
+M 3744 1190 
+Q 3706 1101 3680 1062 
+Q 4640 896 5126 573 
+Q 5613 250 5613 -128 
+Q 5613 -333 5459 -505 
+Q 5306 -678 5114 -678 
+Q 4813 -678 4704 -282 
+Q 4608 70 4307 409 
+Q 4006 749 3610 941 
+Q 3398 608 2985 275 
+Q 2573 -58 2189 -256 
+Q 1805 -454 1238 -588 
+Q 672 -723 531 -723 
+Q 486 -723 486 -697 
+Q 486 -672 576 -646 
+Q 1485 -378 2048 73 
+Q 2611 525 2970 1190 
+L 640 1190 
+Q 512 1190 410 1120 
+L 243 1421 
+Q 397 1402 563 1402 
+L 3072 1402 
+Q 3392 2093 3398 3930 
+Q 4173 3808 4329 3753 
+Q 4486 3699 4486 3648 
+Q 4486 3597 4384 3545 
+Q 4282 3494 4250 3226 
+Q 4064 1958 3840 1402 
+L 4934 1402 
+Q 5254 1914 5299 1968 
+Q 5344 2022 5389 2022 
+Q 5466 2022 5859 1683 
+Q 6253 1344 6253 1267 
+Q 6253 1190 6138 1190 
+L 3744 1190 
+z
+M 1818 3731 
+Q 2317 3731 2669 3539 
+Q 3021 3347 3021 3059 
+Q 3021 2874 2896 2739 
+Q 2771 2605 2598 2605 
+Q 2310 2605 2285 2925 
+Q 2266 3130 2128 3338 
+Q 1990 3546 1805 3674 
+Q 1760 3699 1760 3715 
+Q 1760 3731 1818 3731 
+z
+M 1158 2611 
+Q 1702 2611 2048 2448 
+Q 2394 2285 2394 1965 
+Q 2394 1645 2237 1558 
+Q 2080 1472 1968 1472 
+Q 1856 1472 1773 1571 
+Q 1690 1670 1658 1837 
+Q 1568 2349 1146 2547 
+Q 1094 2573 1094 2592 
+Q 1094 2611 1158 2611 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-6d4b" d="M 4365 192 
+Q 4390 -32 4272 -176 
+Q 4154 -320 3978 -320 
+Q 3802 -320 3696 -227 
+Q 3590 -134 3584 13 
+Q 3571 429 3472 617 
+Q 3373 806 3187 915 
+Q 2918 358 2582 64 
+Q 2246 -230 1779 -396 
+Q 1312 -563 1235 -563 
+Q 1190 -563 1190 -537 
+Q 1190 -512 1254 -480 
+Q 1811 -179 2137 150 
+Q 2464 480 2627 893 
+Q 2790 1306 2816 1754 
+Q 2842 2202 2829 4166 
+Q 3213 4134 3373 4099 
+Q 3533 4064 3533 4019 
+Q 3533 3974 3494 3936 
+Q 3456 3898 3446 3846 
+Q 3437 3795 3437 3642 
+L 3443 2829 
+Q 3443 2061 3398 1673 
+Q 3354 1286 3232 1018 
+Q 4243 762 4352 237 
+Q 4640 224 4896 224 
+Q 5152 224 5251 285 
+Q 5350 346 5350 531 
+L 5350 4672 
+Q 5350 4992 5338 5242 
+Q 5760 5210 5971 5165 
+Q 6182 5120 6182 5056 
+Q 6182 4992 6029 4915 
+L 6029 141 
+Q 6029 -154 5923 -298 
+Q 5818 -442 5552 -512 
+Q 5286 -582 5184 -582 
+Q 5011 -582 4992 -352 
+Q 4973 -122 4835 3 
+Q 4698 128 4365 192 
+z
+M 1606 4448 
+Q 1606 4256 1484 4118 
+Q 1363 3981 1165 3981 
+Q 1082 3981 1005 4025 
+Q 928 4070 883 4140 
+Q 838 4211 838 4288 
+L 845 4442 
+Q 845 4659 787 4780 
+Q 730 4902 538 5018 
+Q 486 5050 486 5075 
+Q 486 5101 582 5101 
+Q 1037 5101 1321 4915 
+Q 1606 4730 1606 4448 
+z
+M 2611 4800 
+L 3526 4800 
+Q 3597 4922 3661 5011 
+Q 3725 5101 3770 5101 
+Q 3840 5101 4121 4915 
+Q 4403 4730 4403 4653 
+Q 4403 4576 4224 4493 
+L 4224 2016 
+Q 4224 1715 4230 1600 
+L 4237 1376 
+Q 4237 1261 4038 1206 
+Q 3840 1152 3680 1152 
+Q 3616 1152 3616 1261 
+L 3616 4589 
+L 2682 4589 
+Q 2669 4544 2598 4518 
+L 2598 1286 
+Q 2598 1235 2579 1209 
+Q 2560 1184 2473 1142 
+Q 2387 1101 2281 1081 
+Q 2176 1062 2035 1062 
+Q 1978 1062 1978 1114 
+L 1990 1414 
+Q 2003 1728 2003 1984 
+L 2003 4397 
+Q 2003 4774 1990 5043 
+Q 2330 4966 2611 4800 
+z
+M 5075 4128 
+L 5075 1760 
+L 5088 1184 
+Q 5088 1120 5062 1091 
+Q 5037 1062 4899 1017 
+Q 4762 973 4563 973 
+Q 4480 973 4480 1030 
+L 4493 1274 
+Q 4499 1562 4499 1805 
+L 4499 3885 
+Q 4499 4173 4486 4397 
+Q 4870 4378 5027 4349 
+Q 5184 4320 5184 4262 
+Q 5184 4205 5075 4128 
+z
+M 1907 4224 
+L 1395 2259 
+Q 1261 1709 1261 1398 
+Q 1261 1088 1376 499 
+Q 1408 339 1408 198 
+Q 1408 -90 1270 -246 
+Q 1133 -403 890 -403 
+Q 480 -403 480 -13 
+Q 480 128 569 470 
+Q 659 813 659 1027 
+Q 659 1242 556 1354 
+Q 454 1466 179 1542 
+Q 128 1555 128 1580 
+Q 128 1606 265 1606 
+Q 403 1606 537 1638 
+Q 672 1670 777 1756 
+Q 883 1843 956 1980 
+Q 1030 2118 1158 2464 
+L 1824 4269 
+Q 1850 4352 1882 4352 
+Q 1914 4352 1914 4304 
+Q 1914 4256 1907 4224 
+z
+M 1274 3040 
+Q 1274 2835 1152 2710 
+Q 1030 2586 883 2586 
+Q 736 2586 633 2698 
+Q 531 2810 540 2922 
+Q 550 3034 550 3158 
+Q 550 3283 502 3379 
+Q 454 3475 301 3546 
+Q 256 3565 256 3590 
+Q 256 3616 371 3616 
+Q 806 3616 1040 3462 
+Q 1274 3309 1274 3040 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-70b9" d="M 3578 4275 
+L 4730 4275 
+Q 5005 4730 5043 4778 
+Q 5082 4826 5123 4826 
+Q 5165 4826 5302 4720 
+Q 5440 4614 5600 4473 
+Q 5760 4333 5817 4269 
+Q 5875 4205 5875 4154 
+Q 5875 4064 5722 4064 
+L 3578 4064 
+L 3578 3194 
+L 4358 3194 
+Q 4416 3290 4499 3411 
+Q 4582 3533 4608 3552 
+Q 4634 3571 4659 3571 
+Q 4749 3571 5113 3308 
+Q 5478 3046 5478 2953 
+Q 5478 2861 5248 2810 
+L 5248 2003 
+Q 5248 1664 5254 1568 
+L 5261 1389 
+Q 5261 1357 5238 1331 
+Q 5216 1306 5107 1251 
+Q 4998 1197 4784 1165 
+Q 4570 1133 4522 1133 
+Q 4474 1133 4461 1165 
+Q 4448 1197 4448 1280 
+L 4448 1478 
+L 2061 1478 
+L 2061 1280 
+Q 2061 1229 2032 1203 
+Q 2003 1178 1881 1130 
+Q 1760 1082 1577 1062 
+Q 1395 1043 1347 1043 
+Q 1299 1043 1299 1094 
+L 1312 1376 
+Q 1325 1568 1325 1728 
+L 1325 2925 
+Q 1325 3206 1306 3482 
+Q 1875 3334 2170 3194 
+L 2816 3194 
+L 2816 4755 
+Q 2816 5075 2803 5325 
+Q 3296 5306 3536 5267 
+Q 3776 5229 3776 5139 
+Q 3776 5050 3578 4973 
+L 3578 4275 
+z
+M 4448 1690 
+L 4448 2982 
+L 2272 2982 
+Q 2195 2918 2061 2880 
+L 2061 1690 
+L 4448 1690 
+z
+M 1222 966 
+Q 1274 966 1347 659 
+Q 1421 352 1421 141 
+Q 1421 -256 1203 -470 
+Q 986 -685 768 -685 
+Q 550 -685 428 -585 
+Q 307 -486 307 -320 
+Q 307 -90 506 26 
+Q 819 205 947 304 
+Q 1075 403 1120 518 
+Q 1165 634 1184 877 
+Q 1197 966 1222 966 
+z
+M 4678 966 
+Q 4864 966 5283 822 
+Q 5702 678 5929 448 
+Q 6157 218 6157 -12 
+Q 6157 -243 6006 -406 
+Q 5856 -570 5632 -570 
+Q 5517 -570 5433 -509 
+Q 5350 -448 5318 -355 
+Q 5286 -262 5286 -77 
+Q 5286 211 5132 467 
+Q 4979 723 4698 890 
+Q 4627 928 4627 947 
+Q 4627 966 4678 966 
+z
+M 2016 934 
+Q 2093 934 2390 790 
+Q 2688 646 2867 435 
+Q 3046 224 3046 -3 
+Q 3046 -230 2905 -371 
+Q 2765 -512 2595 -512 
+Q 2426 -512 2330 -422 
+Q 2234 -333 2234 -186 
+Q 2234 -134 2259 -22 
+Q 2285 90 2285 230 
+Q 2285 614 2022 858 
+Q 1984 896 1984 915 
+Q 1984 934 2016 934 
+z
+M 3328 922 
+Q 3424 922 3766 803 
+Q 4109 685 4291 489 
+Q 4474 294 4474 26 
+Q 4474 -186 4336 -330 
+Q 4198 -474 4012 -474 
+Q 3827 -474 3734 -358 
+Q 3642 -243 3661 -80 
+Q 3680 83 3680 179 
+Q 3680 397 3606 544 
+Q 3533 691 3414 787 
+Q 3296 883 3296 902 
+Q 3296 922 3328 922 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-4e0e" d="M 2234 3814 
+L 2163 2784 
+L 4550 2784 
+Q 4730 3110 4758 3139 
+Q 4787 3168 4819 3168 
+Q 4890 3168 5258 2976 
+Q 5626 2784 5696 2726 
+Q 5766 2669 5766 2605 
+Q 5766 2496 5536 2426 
+Q 5485 883 5430 496 
+Q 5376 109 5222 -121 
+Q 5069 -352 4797 -473 
+Q 4525 -595 4173 -595 
+Q 4090 -595 4058 -569 
+Q 4026 -544 4019 -422 
+Q 4013 -198 3856 -76 
+Q 3699 45 3347 102 
+Q 3258 115 3258 140 
+Q 3258 166 3379 166 
+L 3584 166 
+Q 4064 166 4259 214 
+Q 4454 262 4537 419 
+Q 4621 576 4662 973 
+Q 4704 1370 4704 2573 
+L 2202 2573 
+L 2067 2387 
+Q 1997 2285 1917 2285 
+Q 1837 2285 1600 2413 
+Q 1363 2541 1289 2576 
+Q 1216 2611 1216 2684 
+Q 1216 2758 1286 2777 
+Q 1357 2797 1376 2825 
+Q 1395 2854 1402 2912 
+L 1510 4659 
+Q 1530 4947 1530 5049 
+Q 1530 5152 1523 5222 
+Q 2477 5094 2477 4966 
+Q 2477 4896 2298 4819 
+L 2246 4026 
+L 4730 4026 
+Q 4813 4218 4918 4387 
+Q 5024 4557 5062 4598 
+Q 5101 4640 5133 4640 
+Q 5203 4640 5484 4438 
+Q 5766 4237 5904 4128 
+Q 6042 4019 6042 3930 
+Q 6042 3814 5843 3814 
+L 2234 3814 
+z
+M 3373 1408 
+Q 3693 1978 3795 1978 
+Q 3853 1978 3994 1862 
+L 4339 1581 
+Q 4531 1421 4531 1318 
+Q 4531 1197 4352 1197 
+L 666 1197 
+Q 538 1197 435 1126 
+L 269 1427 
+Q 422 1408 589 1408 
+L 3373 1408 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-50" d="M 160 4384 
+Q 474 4384 685 4387 
+Q 896 4390 1005 4397 
+L 1933 4448 
+Q 2054 4454 2102 4454 
+Q 2150 4454 2176 4454 
+Q 2477 4454 2739 4387 
+Q 3002 4320 3194 4176 
+Q 3386 4032 3498 3808 
+Q 3610 3584 3610 3277 
+Q 3610 2995 3498 2784 
+Q 3386 2573 3203 2429 
+Q 3021 2285 2787 2214 
+Q 2554 2144 2317 2144 
+Q 2131 2144 1990 2195 
+Q 1850 2246 1728 2368 
+L 1741 2426 
+Q 1824 2394 1920 2384 
+Q 2016 2374 2086 2374 
+Q 2246 2374 2377 2419 
+Q 2509 2464 2605 2563 
+Q 2701 2662 2755 2828 
+Q 2810 2995 2810 3245 
+Q 2810 3667 2598 3932 
+Q 2387 4198 1952 4198 
+Q 1862 4198 1801 4195 
+Q 1741 4192 1690 4186 
+Q 1638 4179 1603 4169 
+Q 1568 4160 1536 4147 
+L 1536 864 
+Q 1536 768 1577 701 
+Q 1619 634 1760 608 
+L 2144 538 
+L 2144 358 
+Q 1875 371 1635 377 
+Q 1395 384 1222 384 
+Q 1024 384 816 377 
+Q 608 371 288 365 
+L 288 544 
+L 646 614 
+Q 742 634 774 685 
+Q 806 736 806 858 
+L 806 3744 
+Q 806 3987 656 4070 
+Q 506 4154 160 4192 
+L 160 4384 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-43" d="M 3910 1459 
+Q 3891 1363 3872 1232 
+Q 3853 1101 3827 960 
+Q 3802 819 3773 684 
+Q 3744 550 3712 442 
+Q 3507 358 3200 320 
+Q 2893 282 2445 282 
+Q 1997 282 1590 416 
+Q 1184 550 873 806 
+Q 563 1062 377 1436 
+Q 192 1811 192 2298 
+Q 192 2784 358 3181 
+Q 525 3578 816 3859 
+Q 1107 4141 1500 4294 
+Q 1894 4448 2349 4448 
+Q 2720 4448 2989 4406 
+Q 3258 4365 3430 4314 
+Q 3635 4256 3770 4186 
+Q 3776 4109 3782 3971 
+Q 3789 3834 3792 3680 
+Q 3795 3526 3792 3385 
+Q 3789 3245 3789 3162 
+L 3603 3162 
+Q 3584 3347 3517 3529 
+Q 3450 3712 3318 3859 
+Q 3187 4006 2985 4096 
+Q 2784 4186 2496 4186 
+Q 2176 4186 1917 4083 
+Q 1658 3981 1475 3769 
+Q 1293 3558 1190 3228 
+Q 1088 2899 1088 2445 
+Q 1088 1933 1206 1574 
+Q 1325 1216 1526 989 
+Q 1728 762 2003 656 
+Q 2278 550 2598 550 
+Q 2816 550 2989 614 
+Q 3162 678 3299 793 
+Q 3437 909 3549 1078 
+Q 3661 1248 3763 1459 
+L 3910 1459 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-48" d="M 3584 3955 
+Q 3584 4090 3552 4138 
+Q 3520 4186 3443 4198 
+L 3136 4237 
+L 3136 4403 
+Q 3258 4390 3517 4384 
+Q 3776 4378 4051 4378 
+Q 4326 4378 4585 4384 
+Q 4845 4390 4960 4403 
+L 4960 4237 
+L 4538 4173 
+Q 4454 4160 4428 4115 
+Q 4403 4070 4403 3949 
+L 4403 883 
+Q 4403 742 4432 691 
+Q 4461 640 4576 614 
+L 5037 525 
+L 5037 358 
+Q 4877 371 4605 377 
+Q 4333 384 4070 384 
+Q 3942 384 3804 384 
+Q 3667 384 3536 381 
+Q 3405 378 3289 371 
+Q 3174 365 3091 358 
+L 3091 525 
+L 3456 589 
+Q 3533 602 3558 666 
+Q 3584 730 3584 883 
+L 3584 2253 
+L 1606 2253 
+L 1606 883 
+Q 1606 723 1632 662 
+Q 1658 602 1741 589 
+L 2106 525 
+L 2106 358 
+Q 2022 365 1907 371 
+Q 1792 378 1661 381 
+Q 1530 384 1389 384 
+Q 1248 384 1120 384 
+Q 864 384 592 377 
+Q 320 371 160 358 
+L 160 525 
+L 621 614 
+Q 723 634 755 691 
+Q 787 749 787 883 
+L 787 3955 
+Q 787 4090 755 4138 
+Q 723 4186 646 4198 
+L 339 4237 
+L 339 4403 
+Q 461 4390 723 4384 
+Q 986 4378 1274 4378 
+Q 1555 4378 1817 4384 
+Q 2080 4390 2195 4403 
+L 2195 4237 
+L 1741 4173 
+Q 1658 4160 1632 4112 
+Q 1606 4064 1606 3949 
+L 1606 2547 
+L 3584 2547 
+L 3584 3955 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-49" d="M 723 794 
+L 723 3974 
+Q 723 4083 688 4128 
+Q 653 4173 563 4179 
+L 160 4237 
+L 160 4403 
+Q 224 4384 1504 4384 
+Q 1882 4384 2106 4403 
+L 2106 4230 
+L 1702 4173 
+Q 1613 4166 1577 4128 
+Q 1542 4090 1542 3974 
+L 1542 794 
+Q 1542 678 1574 646 
+Q 1606 614 1702 608 
+L 2106 576 
+L 2106 358 
+Q 1978 371 1738 377 
+Q 1498 384 1133 384 
+Q 768 384 528 377 
+Q 288 371 160 358 
+L 160 576 
+L 563 608 
+Q 659 621 691 653 
+Q 723 685 723 794 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-63d2" d="M 992 3629 
+L 557 3629 
+Q 403 3629 282 3590 
+L 173 3866 
+Q 320 3840 493 3840 
+L 992 3840 
+L 992 4627 
+Q 992 5018 966 5318 
+Q 1210 5299 1498 5244 
+Q 1786 5190 1824 5164 
+Q 1862 5139 1862 5114 
+Q 1862 5043 1715 4986 
+L 1715 3840 
+L 1754 3840 
+Q 1914 4109 1971 4179 
+Q 2029 4250 2067 4250 
+Q 2144 4250 2441 3990 
+Q 2739 3731 2739 3680 
+Q 2739 3629 2618 3629 
+L 1715 3629 
+L 1715 2746 
+Q 2323 2893 2454 2931 
+Q 2586 2970 2627 2970 
+Q 2669 2970 2669 2941 
+Q 2669 2912 2541 2835 
+L 1715 2342 
+L 1715 198 
+Q 1715 -198 1609 -329 
+Q 1504 -461 1270 -528 
+Q 1037 -595 928 -595 
+Q 730 -595 717 -448 
+Q 691 -211 604 -121 
+Q 518 -32 358 41 
+Q 198 115 198 140 
+Q 198 166 284 160 
+Q 371 154 435 154 
+Q 723 154 857 218 
+Q 992 282 992 435 
+L 992 1907 
+Q 666 1722 595 1664 
+Q 525 1606 496 1606 
+Q 467 1606 454 1628 
+Q 442 1651 336 1942 
+Q 230 2234 166 2464 
+Q 538 2509 992 2592 
+L 992 3629 
+z
+M 3622 4422 
+Q 3130 4416 2765 4400 
+Q 2400 4384 2387 4384 
+Q 2304 4384 2304 4432 
+Q 2304 4480 2406 4493 
+Q 4352 4800 5139 5235 
+Q 5485 4960 5673 4774 
+Q 5862 4589 5884 4563 
+Q 5907 4538 5907 4512 
+Q 5907 4454 5798 4454 
+L 5382 4461 
+Q 5146 4461 4480 4442 
+Q 4454 4294 4326 4256 
+L 4326 3482 
+L 5062 3482 
+Q 5139 3635 5244 3801 
+Q 5350 3968 5376 3993 
+Q 5402 4019 5434 4019 
+Q 5523 4019 5916 3712 
+Q 6310 3405 6310 3315 
+Q 6310 3270 6189 3270 
+L 4326 3270 
+L 4326 90 
+L 4973 90 
+L 4973 1158 
+L 4730 1158 
+Q 4602 1158 4499 1088 
+L 4333 1389 
+Q 4486 1370 4653 1370 
+L 4973 1370 
+L 4973 2246 
+L 4730 2246 
+Q 4602 2246 4499 2176 
+L 4333 2477 
+Q 4486 2458 4653 2458 
+L 4806 2458 
+Q 4832 2502 4909 2588 
+Q 4986 2675 5024 2739 
+Q 5062 2803 5113 2803 
+Q 5165 2803 5459 2627 
+Q 5754 2451 5856 2377 
+Q 5958 2304 5958 2227 
+Q 5958 2118 5754 2093 
+L 5754 198 
+L 5766 -326 
+Q 5766 -403 5728 -425 
+Q 5690 -448 5539 -499 
+Q 5389 -550 5206 -550 
+Q 5024 -550 4998 -534 
+Q 4973 -518 4973 -403 
+L 4973 -122 
+L 2982 -122 
+L 2982 -371 
+Q 2982 -422 2953 -448 
+Q 2925 -474 2774 -531 
+Q 2624 -589 2480 -589 
+Q 2336 -589 2304 -579 
+Q 2272 -570 2272 -538 
+L 2285 -288 
+Q 2298 -122 2298 96 
+L 2298 2035 
+Q 2298 2317 2278 2592 
+Q 2432 2547 2784 2419 
+Q 2976 2611 3174 2944 
+Q 3392 2810 3622 2611 
+L 3622 3270 
+L 2432 3270 
+Q 2304 3270 2202 3200 
+L 2035 3501 
+Q 2189 3482 2355 3482 
+L 3622 3482 
+L 3622 4422 
+z
+M 3622 2419 
+Q 3411 2400 3091 2285 
+Q 3136 2278 3136 2236 
+Q 3136 2195 3091 2147 
+Q 3046 2099 2982 2074 
+L 2982 1421 
+L 3066 1421 
+Q 3162 1594 3194 1635 
+Q 3226 1677 3258 1677 
+Q 3334 1677 3622 1389 
+L 3622 2419 
+z
+M 3622 90 
+L 3622 1210 
+L 2982 1210 
+L 2982 90 
+L 3622 90 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-503c" d="M 3162 3347 
+L 3411 3347 
+L 3411 4051 
+L 2451 4051 
+Q 2323 4051 2221 3981 
+L 2054 4282 
+Q 2208 4262 2374 4262 
+L 3418 4262 
+L 3418 4678 
+Q 3418 4973 3405 5274 
+Q 4013 5216 4201 5171 
+Q 4390 5126 4390 5065 
+Q 4390 5005 4224 4954 
+L 4198 4262 
+L 4877 4262 
+Q 5050 4627 5126 4736 
+Q 5203 4845 5251 4845 
+Q 5299 4845 5539 4675 
+Q 5779 4506 5939 4362 
+Q 6099 4218 6099 4134 
+Q 6099 4051 5952 4051 
+L 4186 4051 
+L 4160 3347 
+L 4461 3347 
+Q 4640 3744 4736 3744 
+Q 4774 3744 5059 3584 
+Q 5344 3424 5485 3321 
+Q 5626 3219 5626 3162 
+Q 5626 3072 5389 2995 
+L 5389 13 
+Q 5510 224 5548 272 
+Q 5587 320 5641 320 
+Q 5696 320 5872 176 
+Q 6048 32 6198 -105 
+Q 6349 -243 6349 -326 
+Q 6349 -410 6214 -410 
+L 2202 -410 
+Q 2074 -410 1971 -480 
+L 1805 -179 
+Q 1958 -198 2125 -198 
+L 2458 -198 
+L 2458 3014 
+Q 2458 3334 2445 3584 
+Q 2925 3456 3162 3347 
+z
+M 3168 2515 
+L 4595 2515 
+L 4595 3136 
+L 3283 3136 
+Q 3238 3072 3168 3053 
+L 3168 2515 
+z
+M 4595 2304 
+L 3168 2304 
+L 3168 1677 
+L 4595 1677 
+L 4595 2304 
+z
+M 4595 813 
+L 4595 1466 
+L 3168 1466 
+L 3168 813 
+L 4595 813 
+z
+M 4595 -198 
+L 4595 602 
+L 3168 602 
+L 3168 -198 
+L 4595 -198 
+z
+M 1472 3392 
+Q 1888 3354 1888 3258 
+Q 1888 3194 1722 3149 
+L 1722 -474 
+Q 1722 -525 1702 -550 
+Q 1683 -576 1577 -621 
+Q 1472 -666 1261 -701 
+Q 1050 -736 947 -736 
+Q 902 -736 902 -672 
+L 922 -70 
+Q 928 211 928 461 
+L 928 2451 
+Q 826 2291 563 2006 
+Q 301 1722 243 1722 
+Q 224 1722 224 1754 
+Q 224 1786 262 1856 
+Q 666 2573 864 3347 
+Q 1062 4122 1190 5216 
+Q 1632 5107 1897 5017 
+Q 2163 4928 2224 4889 
+Q 2285 4851 2285 4806 
+Q 2285 4762 2201 4752 
+Q 2118 4742 2051 4640 
+Q 1984 4538 1795 4109 
+Q 1606 3680 1472 3392 
+z
+" transform="scale(0.015625)"/>
+     <path id="STSongti-SC-Black-53ca" d="M 3866 384 
+Q 3398 64 2848 -144 
+Q 2298 -352 1709 -470 
+Q 1120 -589 1030 -589 
+Q 941 -589 941 -557 
+Q 941 -525 1056 -493 
+Q 1722 -320 2378 9 
+Q 3034 339 3520 762 
+Q 2682 1805 2534 3334 
+Q 2400 2368 2198 1744 
+Q 1997 1120 1625 633 
+Q 1254 147 739 -198 
+Q 224 -544 154 -544 
+Q 134 -544 134 -521 
+Q 134 -499 179 -461 
+Q 749 64 1062 569 
+Q 1376 1075 1523 1648 
+Q 1670 2221 1737 2857 
+Q 1805 3494 1811 4557 
+L 1062 4557 
+Q 890 4557 794 4512 
+L 678 4800 
+Q 813 4768 998 4768 
+L 4006 4768 
+Q 4051 4864 4134 4998 
+Q 4218 5133 4246 5155 
+Q 4275 5178 4314 5178 
+Q 4416 5178 4813 4954 
+Q 5210 4730 5210 4624 
+Q 5210 4518 5024 4506 
+Q 4941 4499 4896 4476 
+Q 4851 4454 4819 4365 
+L 4346 3098 
+L 4698 3098 
+Q 4800 3290 4854 3357 
+Q 4909 3424 4960 3424 
+Q 5050 3424 5338 3248 
+Q 5626 3072 5728 2995 
+Q 5830 2918 5830 2861 
+Q 5830 2784 5696 2771 
+Q 5626 2765 5584 2729 
+Q 5542 2694 5498 2579 
+Q 5107 1542 4448 877 
+Q 5024 448 6150 275 
+Q 6291 256 6291 227 
+Q 6291 198 6137 153 
+Q 5984 109 5747 -89 
+Q 5510 -288 5449 -448 
+Q 5389 -608 5267 -608 
+Q 5229 -608 5177 -589 
+Q 5126 -570 4860 -403 
+Q 4595 -237 4342 -38 
+Q 4090 160 3866 384 
+z
+M 3987 1267 
+Q 4525 1997 4710 2886 
+L 4237 2886 
+L 4109 2739 
+Q 4064 2682 4009 2682 
+Q 3955 2682 3712 2858 
+Q 3469 3034 3469 3078 
+Q 3469 3123 3514 3149 
+Q 3712 3277 3795 3552 
+L 4096 4557 
+L 2720 4557 
+Q 2662 4467 2649 4310 
+Q 2637 4154 2605 3859 
+Q 2861 2291 3987 1267 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#STSongti-SC-Black-9644"/>
+    <use xlink:href="#STSongti-SC-Black-4ef6" transform="translate(99.999985 0)"/>
+    <use xlink:href="#STSongti-SC-Black-32" transform="translate(199.999969 0)"/>
+    <use xlink:href="#STSongti-SC-Black-534a" transform="translate(246.899963 0)"/>
+    <use xlink:href="#STSongti-SC-Black-5f84" transform="translate(346.899948 0)"/>
+    <use xlink:href="#STSongti-SC-Black-5b9e" transform="translate(446.899933 0)"/>
+    <use xlink:href="#STSongti-SC-Black-6d4b" transform="translate(546.899918 0)"/>
+    <use xlink:href="#STSongti-SC-Black-70b9" transform="translate(646.899902 0)"/>
+    <use xlink:href="#STSongti-SC-Black-4e0e" transform="translate(746.899887 0)"/>
+    <use xlink:href="#STSongti-SC-Black-50" transform="translate(846.899872 0)"/>
+    <use xlink:href="#STSongti-SC-Black-43" transform="translate(905.799866 0)"/>
+    <use xlink:href="#STSongti-SC-Black-48" transform="translate(969.399857 0)"/>
+    <use xlink:href="#STSongti-SC-Black-49" transform="translate(1050.599838 0)"/>
+    <use xlink:href="#STSongti-SC-Black-50" transform="translate(1085.999832 0)"/>
+    <use xlink:href="#STSongti-SC-Black-63d2" transform="translate(1144.899826 0)"/>
+    <use xlink:href="#STSongti-SC-Black-503c" transform="translate(1244.899811 0)"/>
+    <use xlink:href="#STSongti-SC-Black-53ca" transform="translate(1344.899796 0)"/>
+    <use xlink:href="#STSongti-SC-Black-534a" transform="translate(1444.89978 0)"/>
+    <use xlink:href="#STSongti-SC-Black-5f84" transform="translate(1544.899765 0)"/>
+    <use xlink:href="#STSongti-SC-Black-6bd4" transform="translate(1644.89975 0)"/>
+   </g>
+  </g>
+  <g id="legend_1">
+   <g id="patch_9">
+    <path d="M 157.487938 21.24 
+L 329.081687 21.24 
+Q 330.681687 21.24 330.681687 19.64 
+L 330.681687 8.8 
+Q 330.681687 7.2 329.081687 7.2 
+L 157.487938 7.2 
+Q 155.887938 7.2 155.887938 8.8 
+L 155.887938 19.64 
+Q 155.887938 21.24 157.487938 21.24 
+z
+" style="fill: #ffffff; opacity: 0.95; stroke: #c8d0d9; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_34">
+    <g>
+     <use xlink:href="#m28aab2f459" x="167.087938" y="14.1275" style="fill: #ffffff; stroke: #1f4e79; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="text_23">
+    <!-- 附件2实测半径 -->
+    <g transform="translate(181.487938 16.9275) scale(0.08 -0.08)">
+     <use xlink:href="#STSongti-SC-Black-9644"/>
+     <use xlink:href="#STSongti-SC-Black-4ef6" transform="translate(99.999985 0)"/>
+     <use xlink:href="#STSongti-SC-Black-32" transform="translate(199.999969 0)"/>
+     <use xlink:href="#STSongti-SC-Black-5b9e" transform="translate(246.899963 0)"/>
+     <use xlink:href="#STSongti-SC-Black-6d4b" transform="translate(346.899948 0)"/>
+     <use xlink:href="#STSongti-SC-Black-534a" transform="translate(446.899933 0)"/>
+     <use xlink:href="#STSongti-SC-Black-5f84" transform="translate(546.899918 0)"/>
+    </g>
+   </g>
+   <g id="line2d_35">
+    <path d="M 249.240437 14.1275 
+L 257.240437 14.1275 
+L 265.240437 14.1275 
+" style="fill: none; stroke: #b63d3d; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_24">
+    <!-- PCHIP插值曲线 -->
+    <g transform="translate(271.640437 16.9275) scale(0.08 -0.08)">
+     <defs>
+      <path id="STSongti-SC-Black-66f2" d="M 3373 3763 
+L 3373 4704 
+Q 3373 5024 3360 5274 
+Q 3680 5261 3917 5232 
+Q 4154 5203 4205 5168 
+Q 4256 5133 4256 5075 
+Q 4256 5018 4141 4979 
+L 4141 3763 
+L 4653 3763 
+Q 4717 3885 4793 4000 
+Q 4870 4115 4889 4131 
+Q 4909 4147 4941 4147 
+Q 5024 4147 5392 3913 
+Q 5760 3680 5760 3597 
+Q 5760 3514 5568 3437 
+L 5568 -38 
+Q 5568 -147 5574 -230 
+L 5587 -371 
+Q 5587 -422 5523 -454 
+L 5325 -538 
+Q 5203 -589 5020 -589 
+Q 4838 -589 4796 -573 
+Q 4755 -557 4755 -486 
+L 4755 -115 
+L 1382 -115 
+L 1382 -403 
+Q 1382 -474 1222 -550 
+Q 1062 -627 867 -627 
+Q 672 -627 653 -617 
+Q 634 -608 640 -557 
+Q 653 -410 653 -83 
+L 653 3469 
+Q 653 3738 634 4013 
+Q 1062 3917 1389 3763 
+L 1965 3763 
+L 1965 4691 
+Q 1965 5011 1952 5261 
+Q 2528 5229 2685 5190 
+Q 2842 5152 2842 5081 
+Q 2842 5011 2733 4973 
+L 2733 3763 
+L 3373 3763 
+z
+M 1965 2054 
+L 1965 3552 
+L 1523 3552 
+Q 1472 3482 1382 3443 
+L 1382 2054 
+L 1965 2054 
+z
+M 4141 3552 
+L 4141 2054 
+L 4755 2054 
+L 4755 3552 
+L 4141 3552 
+z
+M 3373 2054 
+L 3373 3552 
+L 2733 3552 
+L 2733 2054 
+L 3373 2054 
+z
+M 1965 96 
+L 1965 1843 
+L 1382 1843 
+L 1382 96 
+L 1965 96 
+z
+M 4141 1843 
+L 4141 96 
+L 4755 96 
+L 4755 1843 
+L 4141 1843 
+z
+M 3373 96 
+L 3373 1843 
+L 2733 1843 
+L 2733 96 
+L 3373 96 
+z
+" transform="scale(0.015625)"/>
+      <path id="STSongti-SC-Black-7ebf" d="M 4109 5005 
+Q 4205 5011 4301 5011 
+Q 4749 5011 5017 4873 
+Q 5286 4736 5286 4512 
+Q 5286 4378 5190 4250 
+Q 5478 4090 5635 3971 
+Q 5792 3853 5792 3763 
+Q 5792 3674 5606 3635 
+L 4000 3322 
+Q 4026 2854 4051 2630 
+L 4947 2829 
+Q 5037 3072 5107 3238 
+Q 5178 3405 5206 3440 
+Q 5235 3475 5267 3475 
+Q 5344 3475 5609 3312 
+Q 5875 3149 5996 3062 
+Q 6118 2976 6118 2889 
+Q 6118 2803 5965 2771 
+L 4083 2381 
+Q 4179 1766 4339 1370 
+Q 4768 1882 4947 2445 
+Q 5389 2272 5625 2163 
+Q 5862 2054 5891 2028 
+Q 5920 2003 5920 1978 
+Q 5920 1920 5782 1881 
+Q 5645 1843 5491 1651 
+Q 5075 1126 4685 794 
+Q 4826 634 5027 512 
+Q 5229 390 5315 390 
+Q 5402 390 5459 428 
+Q 5517 467 5629 694 
+Q 5741 922 5843 1165 
+Q 5946 1408 5974 1408 
+Q 6003 1408 6003 1363 
+Q 6003 1318 5990 1267 
+Q 5875 826 5875 490 
+Q 5875 154 6118 -166 
+Q 6176 -250 6176 -358 
+Q 6176 -467 6061 -553 
+Q 5946 -640 5734 -640 
+Q 5363 -640 4896 -384 
+Q 4429 -128 4070 352 
+Q 3526 19 2652 -237 
+Q 1779 -493 1664 -493 
+Q 1600 -493 1600 -454 
+Q 1600 -416 1734 -365 
+Q 2989 141 3789 813 
+Q 3539 1344 3392 2234 
+L 2694 2093 
+Q 2579 2086 2470 1990 
+L 2272 2298 
+Q 2349 2291 2425 2291 
+Q 2502 2291 2592 2310 
+L 3354 2477 
+Q 3296 2867 3264 3181 
+L 2880 3104 
+Q 2752 3085 2656 3002 
+L 2541 3181 
+Q 1914 2419 1267 1709 
+L 2758 1760 
+Q 2906 1760 2906 1718 
+Q 2906 1677 2739 1632 
+Q 1971 1414 1571 1270 
+Q 1171 1126 774 928 
+Q 717 896 672 896 
+Q 627 896 611 918 
+Q 595 941 483 1293 
+Q 371 1645 371 1721 
+Q 371 1798 499 1805 
+Q 704 1811 889 1907 
+Q 1075 2003 1196 2195 
+Q 1318 2387 1574 2880 
+Q 1018 2701 646 2464 
+Q 589 2426 550 2426 
+Q 512 2426 489 2461 
+Q 467 2496 348 2816 
+Q 230 3136 230 3200 
+Q 230 3302 339 3315 
+Q 448 3328 541 3379 
+Q 634 3430 685 3500 
+Q 736 3571 861 3910 
+Q 986 4250 1059 4534 
+Q 1133 4819 1197 5184 
+Q 1574 5043 1878 4905 
+Q 2182 4768 2214 4739 
+Q 2246 4710 2246 4678 
+Q 2246 4614 2112 4589 
+Q 2054 4576 1990 4518 
+Q 1926 4461 1558 4000 
+Q 1190 3539 877 3162 
+L 1702 3155 
+Q 1933 3661 2086 4102 
+Q 2304 4006 2624 3840 
+Q 2944 3674 2976 3638 
+Q 3008 3603 3008 3571 
+Q 3008 3507 2915 3481 
+Q 2822 3456 2656 3302 
+L 3245 3411 
+L 3117 5274 
+Q 3398 5261 3715 5216 
+Q 4032 5171 4089 5145 
+Q 4147 5120 4147 5085 
+Q 4147 5050 4109 5005 
+z
+M 4806 4032 
+Q 4589 4090 4531 4269 
+Q 4429 4589 4326 4704 
+Q 4224 4819 4019 4915 
+Q 4006 4909 3981 4883 
+Q 3974 4614 3974 4291 
+Q 3974 3968 3987 3558 
+L 4685 3693 
+Q 4749 3885 4806 4032 
+z
+M 256 448 
+Q 1018 518 1734 659 
+L 2842 870 
+Q 2899 870 2899 835 
+Q 2899 800 2829 768 
+Q 1261 19 672 -365 
+Q 614 -397 588 -397 
+Q 563 -397 547 -377 
+Q 531 -358 432 -102 
+Q 333 154 256 448 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#STSongti-SC-Black-50"/>
+     <use xlink:href="#STSongti-SC-Black-43" transform="translate(58.899994 0)"/>
+     <use xlink:href="#STSongti-SC-Black-48" transform="translate(122.499985 0)"/>
+     <use xlink:href="#STSongti-SC-Black-49" transform="translate(203.699966 0)"/>
+     <use xlink:href="#STSongti-SC-Black-50" transform="translate(239.09996 0)"/>
+     <use xlink:href="#STSongti-SC-Black-63d2" transform="translate(297.999954 0)"/>
+     <use xlink:href="#STSongti-SC-Black-503c" transform="translate(397.999939 0)"/>
+     <use xlink:href="#STSongti-SC-Black-66f2" transform="translate(497.999924 0)"/>
+     <use xlink:href="#STSongti-SC-Black-7ebf" transform="translate(597.999908 0)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdbbf42828e">
+   <rect x="46.292813" y="42.9548" width="393.984" height="200.2464"/>
+  </clipPath>
+ </defs>
+</svg>
