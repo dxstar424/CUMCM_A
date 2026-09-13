@@ -1,0 +1,10 @@
+{
+  "命令": "python3 src/q4_length_shrink_compare.py",
+  "输入": [
+    "results/inputs.npz",
+    "results/q4.npz"
+  ],
+  "随机性": "无",
+  "Python": "3.14.6",
+  "NumPy": "2.4.1"
+}
